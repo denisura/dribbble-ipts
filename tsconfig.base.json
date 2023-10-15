@@ -17,6 +17,7 @@
     "paths": {
       "@ipts/ipts-ui": ["libs/ipts-ui/src/index.ts"],
       "@ipts/rail-ui": ["libs/rail-ui/src/index.ts"],
+      "@ipts/storybook-host": ["libs/storybook-host/src/index.ts"],
       "@ipts/travel-ui": ["libs/travel-ui/src/index.ts"],
       "@ipts/ui": ["libs/ui/src/index.ts"]
     }

@@ -80,10 +80,74 @@ yarn nx g @nx/react:component <component-name> --project=ui --export
 
 ## Storybook
 
+One main Storybook instance for all projects
+
 Follow https://nx.dev/recipes/storybook/one-storybook-for-all
 
+Create storybook host library
+
 ```
-yarn nx @nx/react:library storybook-host --directory=libs/storybook-host --bundler=none --unitTestRunner=none --projectNameAndRootFormat=as-provided
+yarn nx g @nx/react:library storybook-host --directory=libs/storybook-host --bundler=none --unitTestRunner=none --projectNameAndRootFormat=as-provided
+```
+
+Configure the new library to use Storybook
+
+```
+yarn nx g @nx/storybook:configuration storybook-host --interactionTests=true --uiFramework=@storybook/react-vite
+```
+
+Clean up Storybook library
+
+- Delete the contents of the `src/libs`.
+- Delete the `lint` target in `libs/storybook-host/project.json`.
+
+Create root directory for generic documentation `libs/storybook-host/src/docs/`.
+
+Specify pattern and locations for stories files exposed by Storybook in `libs/storybook-host/.storybook/main.ts`
+
+```
+const config: StorybookConfig = {
+  stories: [
+    '../src/docs/**/*.stories.@(js|jsx|ts|tsx|mdx)',
+    '../../**/*-ui/**/src/lib/**/*.stories.@(js|jsx|ts|tsx|mdx)'
+  ],
+  ...
+};
+```
+
+Create `overview` page in `getting started` section
+
+Create `libs/storybook-host/src/docs/getting-started/overview/stories.mdx`.
+
+```
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Getting Started/Overview" />
+
+# Overview
+
+```
+
+Define implicit dependencies on UI libraries `libs/storybook-host/project.json`
+
+```
+{
+  ...
+  "tags": ["type:storybook"],
+  "implicitDependencies": [
+    "ipts-ui",
+    "rail-ui",
+    "travel-ui"
+  ],
+  ...
+}
+
+```
+
+Serve storybook
+
+```
+yarn nx storybook storybook-host
 ```
 
 ## Start the app
