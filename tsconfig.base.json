@@ -15,11 +15,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ipts/ipts-ui": ["libs/ipts-ui/src/index.ts"],
-      "@ipts/rail-ui": ["libs/rail-ui/src/index.ts"],
+      "@ipts/company-ui-theme-provider": [
+        "libs/company/ui/theme-provider/src/index.ts"
+      ],
+      "@ipts/rail-ui-theme-provider": [
+        "libs/rail/ui/theme-provider/src/index.ts"
+      ],
+      "@ipts/shared-ui-theme": ["libs/shared/ui/theme/src/index.ts"],
+      "@ipts/shared-ui-theme-provider": [
+        "libs/shared/ui/theme-provider/src/index.ts"
+      ],
       "@ipts/storybook-host": ["libs/storybook-host/src/index.ts"],
-      "@ipts/travel-ui": ["libs/travel-ui/src/index.ts"],
-      "@ipts/ui": ["libs/ui/src/index.ts"]
+      "@ipts/travel-ui-theme-provider": [
+        "libs/travel/ui/theme-provider/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

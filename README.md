@@ -9,7 +9,7 @@ npx create-nx-workspace@latest
 Generate an application
 
 ```
-yarn nx g @nx/react:app ipts --directory=apps/ipts
+yarn nx g @nx/react:app company --directory=apps/company
 yarn nx g @nx/react:app travel --directory=apps/travel
 yarn nx g @nx/react:app rail --directory=apps/rail
 ```
@@ -36,34 +36,72 @@ Edit `apps/*/project.json`
 }
 ```
 
-| App    | port |
-| ------ | ---- |
-| ipts   | 4201 |
-| travel | 4202 |
-| rail   | 4203 |
+| App     | port |
+| ------- | ---- |
+| company | 4201 |
+| travel  | 4202 |
+| rail    | 4203 |
 
 Run all three applications at the same time
 
 ```
-yarn nx  run-many -t serve -p ipts travel rail --parallel=3
+yarn nx  run-many -t serve -p company travel rail --parallel=3
 ```
 
-Add library
-
-```
-yarn nx g @nx/react:lib ui --directory=libs/ui
-yarn nx g @nx/react:lib ipts-ui --directory=libs/ipts-ui
-yarn nx g @nx/react:lib travel-ui --directory=libs/travel-ui
-yarn nx g @nx/react:lib rail-ui --directory=libs/rail-ui
-```
-
-Install MUI library
+Configure theme ability Install MUI library
 
 ```
 yarn add @mui/material @emotion/react @emotion/styled
 yarn add @mui/icons-material
+yarn nx g @nx/js:lib shared-ui-theme --directory=libs/shared/ui/theme
+yarn nx g @nx/react:lib shared-ui-theme-provider --directory=libs/shared/ui/theme-provider
+```
+
+Package `shared-ui-theme` defines defines theme parameters for all products
+
+Package `shared-ui-theme-provider` defines default theme provider that resets css and passes theme to all components within provider
+
+Wrap each app with themeProvider
+Observe dependancy graph
+
+//Create wireframe to define the list of components we need
+
+- header
+- footer
+- drawer
+
+//Define information architecture and scope of responsibilities
+
+shared UI - context agnostic components atoms and moleculas. base components for all applications
+APP UI - context aware components specific for the app. Layouts and organism
+APP - a collection of routes with APP UI components connected with specific data for each route
+
+Routes
+Utils
+
+Challenge: Custom font
+
+TBD
+
+Challenge: Customize colors
+
+Customize theme for individual product
 
 ```
+yarn nx g @nx/react:lib company-ui-theme-provider --directory=libs/company/ui/theme-provider
+yarn nx g @nx/react:lib travel-ui-theme-provider --directory=libs/travel/ui/theme-provider
+yarn nx g @nx/react:lib rail-ui-theme-provider --directory=libs/rail/ui/theme-provider
+```
+
+Package `company-ui-theme-provider` customizes default theme provider with specific theme for company product
+
+Package `travel-ui-theme-provider` customizes default theme provider with specific theme for travel product
+
+Package `rail-ui-theme-provider` customizes default theme provider with specific theme for rail product
+
+Challenge: Custom logos for each
+
+TBD
 
 Project Graph
 
@@ -205,3 +243,11 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 - [Join the community](https://nx.dev/community)
 - [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
 - [Follow us on Twitter](https://twitter.com/nxdevtools)
+
+## Maintenance
+
+Rename package
+
+```
+yarn nx g @nx/workspace:move --projectName ipts --destination company
+```

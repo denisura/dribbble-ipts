@@ -5,9 +5,9 @@
   "projectType": "library",
   "tags": ["type:storybook"],
   "implicitDependencies": [
-    "ipts-ui",
-    "rail-ui",
-    "travel-ui"
+    "company-ui-theme-provider",
+    "rail-ui-theme-provider",
+    "travel-ui-theme-provider"
   ],
   "targets": {
     "storybook": {

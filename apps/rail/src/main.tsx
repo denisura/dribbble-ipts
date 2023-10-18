@@ -1,16 +1,17 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import { ThemeProvider, theme } from '@ipts/rail-ui';
+import { RailUiThemeProvider } from '@ipts/rail-ui-theme-provider';
 
 import App from './app/app';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <StrictMode>
-    <ThemeProvider theme={theme}>
+    <RailUiThemeProvider>
       <App />
-    </ThemeProvider>
+    </RailUiThemeProvider>
   </StrictMode>
 );
