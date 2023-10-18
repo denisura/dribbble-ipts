@@ -71,6 +71,30 @@ yarn add react-router-dom
 yarn nx g @nx/react:lib shared-router --directory=libs/shared/router
 ```
 
+//Define data provider for navigation
+
+```
+yarn add invariant
+yarn add @types/invariant -D
+yarn nx g @nx/react:lib shared-data-navigation-provider --directory=libs/shared/data/navigation-provider
+```
+
+Create context awared components for company product
+
+```
+yarn nx g @nx/react:lib company-ui-layout --directory=libs/company/ui/layout\n
+yarn nx g @nx/react:lib company-ui-header --directory=libs/company/ui/header
+yarn nx g @nx/react:lib company-ui-footer --directory=libs/company/ui/footer
+yarn nx g @nx/react:lib company-ui-navigation-drawer --directory=libs/company/ui/navigation-drawer
+```
+
+Define layout with context provider for each product
+
+```
+yarn nx g @nx/react:lib rail-ui-layout --directory=libs/rail/ui/layout
+yarn nx g @nx/react:lib travel-ui-layout --directory=libs/travel/ui/layout
+```
+
 //Create wireframe to define the list of components we need
 
 - header

@@ -15,11 +15,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ipts/company-ui-footer": ["libs/company/ui/footer/src/index.ts"],
+      "@ipts/company-ui-header": ["libs/company/ui/header/src/index.ts"],
+      "@ipts/company-ui-layout": ["libs/company/ui/layout/src/index.ts"],
+      "@ipts/company-ui-navigation-drawer": [
+        "libs/company/ui/navigation-drawer/src/index.ts"
+      ],
       "@ipts/company-ui-theme-provider": [
         "libs/company/ui/theme-provider/src/index.ts"
       ],
       "@ipts/rail-ui-theme-provider": [
         "libs/rail/ui/theme-provider/src/index.ts"
+      ],
+      "@ipts/shared-data-navigation-provider": [
+        "libs/shared/data/navigation-provider/src/index.ts"
       ],
       "@ipts/shared-router": ["libs/shared/router/src/index.ts"],
       "@ipts/shared-ui-theme": ["libs/shared/ui/theme/src/index.ts"],
