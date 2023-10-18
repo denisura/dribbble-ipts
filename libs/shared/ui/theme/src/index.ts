@@ -1,2 +1,2 @@
 export * from './lib/shared-ui-theme';
-export {createTheme, ThemeOptions} from '@mui/material/styles';
+export { createTheme } from '@mui/material/styles';
