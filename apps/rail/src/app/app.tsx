@@ -1,13 +1,15 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
+import { Routes, Route } from '@ipts/shared-router';
 
-import NxWelcome from './nx-welcome';
+import AppLayout from './AppLayout';
+import Home from './Home';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="rail" />
-    </div>
+    <Routes>
+      <Route path="/" element={<AppLayout />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
   );
 }
 

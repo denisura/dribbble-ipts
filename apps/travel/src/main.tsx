@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { TravelUiThemeProvider } from '@ipts/travel-ui-theme-provider';
+import { BrowserRouter } from '@ipts/shared-router';
 
 import App from './app/app';
 
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <StrictMode>
     <TravelUiThemeProvider>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </TravelUiThemeProvider>
   </StrictMode>
 );

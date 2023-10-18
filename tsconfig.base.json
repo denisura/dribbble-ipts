@@ -21,6 +21,7 @@
       "@ipts/rail-ui-theme-provider": [
         "libs/rail/ui/theme-provider/src/index.ts"
       ],
+      "@ipts/shared-router": ["libs/shared/router/src/index.ts"],
       "@ipts/shared-ui-theme": ["libs/shared/ui/theme/src/index.ts"],
       "@ipts/shared-ui-theme-provider": [
         "libs/shared/ui/theme-provider/src/index.ts"

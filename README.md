@@ -64,6 +64,13 @@ Package `shared-ui-theme-provider` defines default theme provider that resets cs
 Wrap each app with themeProvider
 Observe dependancy graph
 
+//configure route
+
+```
+yarn add react-router-dom
+yarn nx g @nx/react:lib shared-router --directory=libs/shared/router
+```
+
 //Create wireframe to define the list of components we need
 
 - header
@@ -251,3 +258,57 @@ Rename package
 ```
 yarn nx g @nx/workspace:move --projectName ipts --destination company
 ```
+
+// // define default layout
+// // provider
+// // LayoutProvider
+// APP
+
+// define context values
+// Navigation
+// data
+// callbacks
+
+// //app.tsx
+// <router >
+// <route path="/" element="element">
+// <route index "home">
+// <route>
+// </router>
+
+// //Default layout.tsx
+// return
+// <LayoutProvider data={ }>
+// <Outline/>
+// </LayoutProvider>
+
+// //Default home.tsx
+// return
+// <Content>
+// </Content>
+
+// APP UI
+
+// useContext
+// const layout = (data, drawerOpen, callbacks)
+
+// //set drawer open doggled and so on
+
+// <provider value = {context} >
+// <AppBAr/>
+// <Drawer/> //portal here
+// {children}
+// <Footer/>
+// </provider>
+
+// Drawer.tsx
+// //use context to pull nav data, logo, title
+
+// SHARED UI
+
+// Context agnostinc basic components - Atomics, moleculas.
+// //drawer
+// //footer
+// //appbar
+// //menu list
+// //list item

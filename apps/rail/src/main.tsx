@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { RailUiThemeProvider } from '@ipts/rail-ui-theme-provider';
+import { BrowserRouter } from '@ipts/shared-router';
 
 import App from './app/app';
 
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <StrictMode>
     <RailUiThemeProvider>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </RailUiThemeProvider>
   </StrictMode>
 );
