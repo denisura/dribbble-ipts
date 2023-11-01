@@ -4,7 +4,9 @@ import invariant from 'invariant';
 type NavigationItem = {
   label?: string;
   to?: string;
-  icon?: string;
+  icon?: JSX.Element | null;
+  key: string;
+  onClick: () => void;
 };
 
 export type NavigationData = {

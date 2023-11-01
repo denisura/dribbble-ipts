@@ -71,6 +71,14 @@ yarn add react-router-dom
 yarn nx g @nx/react:lib shared-router --directory=libs/shared/router
 ```
 
+//Create wireframe to define the list of components we need
+
+- header
+- footer
+- drawer
+
+//Define information architecture and scope of responsibilities
+
 //Define data provider for navigation
 
 ```
@@ -88,20 +96,56 @@ yarn nx g @nx/react:lib company-ui-footer --directory=libs/company/ui/footer
 yarn nx g @nx/react:lib company-ui-navigation-drawer --directory=libs/company/ui/navigation-drawer
 ```
 
+Extract context agnostic components into shared packages
+
+```
+yarn nx g @nx/react:lib shared-hooks --directory=libs/shared/hooks
+yarn nx g @nrwl/react:component useScrolledToTop --project=shared-hooks
+```
+
+News section Data Provider and Presentation
+
+```
+yarn nx g @nx/react:lib company-data-news-provider --directory=libs/company/data/news-provider
+yarn nx g @nx/react:lib company-ui-news-section --directory=libs/company/ui/news-section
+```
+
+Extract news subscription section
+
+```
+yarn nx g @nx/react:lib company-ui-news-subscription-section --directory=libs/company/ui/news-subscription-section
+```
+
+Extract subscription form
+
+```
+yarn nx g @nx/react:lib shared-ui-subscription-form --directory=libs/shared/ui/subscription-form
+```
+
+Extract Company Intro section
+
+```
+yarn nx g @nx/react:lib company-ui-intro-section --directory=libs/company/ui/intro-section
+```
+
+Extract LinearLayout
+
+```
+yarn nx g @nx/react:lib shared-ui-linear-layout --directory=libs/shared/ui/linear-layout
+```
+
+Create logo
+
+```
+yarn nx g @nx/react:lib shared-ui-logo --directory=libs/shared/ui/logo
+```
+
 Define layout with context provider for each product
 
 ```
 yarn nx g @nx/react:lib rail-ui-layout --directory=libs/rail/ui/layout
 yarn nx g @nx/react:lib travel-ui-layout --directory=libs/travel/ui/layout
 ```
-
-//Create wireframe to define the list of components we need
-
-- header
-- footer
-- drawer
-
-//Define information architecture and scope of responsibilities
 
 shared UI - context agnostic components atoms and moleculas. base components for all applications
 APP UI - context aware components specific for the app. Layouts and organism
@@ -336,3 +380,13 @@ yarn nx g @nx/workspace:move --projectName ipts --destination company
 // //appbar
 // //menu list
 // //list item
+
+TO remove Package
+
+```
+yarn nx g @nx/workspace:remove --projectName your-project-full-name
+
+yarn nx g @nx/workspace:remove --projectName company-data-news-subscription-provider
+
+yarn nx g @nx/workspace:remove --projectName company-ui-news-subscription-section
+```
