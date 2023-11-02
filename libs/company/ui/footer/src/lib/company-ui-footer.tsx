@@ -1,59 +1,42 @@
 import Typography from '@mui/material/Typography';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import { useNavigationContext } from '@ipts/shared-data-navigation-provider';
-import { Container, Link, Stack } from '@mui/material';
-import { styled } from '@ipts/shared-ui-theme';
+import { Link, Stack } from '@mui/material';
+import { SharedUiPrimaryContainer } from '@ipts/shared-ui-primary-container';
+import { SharedUiNavigationList } from '@ipts/shared-ui-navigation-list';
 
-export const SharedUiPrimaryContainer = styled(Container)(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
-  color: theme.palette.primary.contrastText,
-}));
+export interface CompanyUiFooterProps {
+  onClick?: () => void;
+}
 
-/* eslint-disable-next-line */
-export interface CompanyUiFooterProps {}
-
-export const CompanyUiFooter = (props: CompanyUiFooterProps) => {
+export const CompanyUiFooter = ({ onClick }: CompanyUiFooterProps) => {
   const { secondary, social } = useNavigationContext();
 
   return (
     <SharedUiPrimaryContainer
+      onClick={onClick}
       sx={{
         textAlign: 'start',
         pb: 4,
         pt: 2,
       }}
-      maxWidth={false}
     >
-      <List>
-        {secondary &&
-          secondary.map(({ label, key, onClick }) => (
-            <ListItem key={key} disablePadding>
-              <ListItemButton
-                disableTouchRipple={true}
-                sx={{ textAlign: 'start', p: 0, minHeight: 32 }}
-                onClick={onClick}
-              >
-                <ListItemText color="inherit">{label}</ListItemText>
-              </ListItemButton>
-            </ListItem>
-          ))}
-      </List>
+      <SharedUiNavigationList navItems={secondary} color="inherit" />
 
-      <Typography variant="subtitle1" color="inherit" gutterBottom>
-        Follow Us
-      </Typography>
+      {social && (
+        <>
+          <Typography variant="subtitle1" color="inherit" gutterBottom>
+            Follow Us
+          </Typography>
 
-      <Stack gap={1} direction="row" justifyContent="start">
-        {social &&
-          social.map(({ label, key, to, icon }) => (
-            <Link href={to} key={key} color="inherit">
-              {icon ? icon : label}
-            </Link>
-          ))}
-      </Stack>
+          <Stack gap={1} direction="row" justifyContent="start">
+            {social.map(({ label, key, to, icon }) => (
+              <Link href={to} key={key} color="inherit">
+                {icon ? icon : label}
+              </Link>
+            ))}
+          </Stack>
+        </>
+      )}
     </SharedUiPrimaryContainer>
   );
 };

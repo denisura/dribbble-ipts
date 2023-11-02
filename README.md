@@ -140,11 +140,30 @@ Create logo
 yarn nx g @nx/react:lib shared-ui-logo --directory=libs/shared/ui/logo
 ```
 
+##Travel
+
+```
+yarn nx g @nx/react:lib travel-ui-layout --directory=libs/travel/ui/layout
+yarn nx g @nx/react:lib travel-ui-footer --directory=libs/travel/ui/footer
+yarn nx g @nx/react:lib travel-ui-header --directory=libs/travel/ui/header
+yarn nx g @nx/react:lib travel-ui-navigation-drawer --directory=libs/travel/ui/navigation-drawer
+yarn nx g @nx/react:lib travel-ui-deal-subscription-section --directory=libs/travel/ui/deal-subscription-section
+yarn nx g @nx/react:lib travel-ui-popular-section --directory=libs/travel/ui/popular-section
+yarn nx g @nx/react:lib travel-ui-search-section  --directory=libs/travel/ui/search-section
+```
+
+Extract navList to shred UI
+
+```
+yarn nx g @nx/react:lib shared-ui-navigation-list --directory=libs/shared/ui/navigation/list
+yarn nx g @nx/react:lib shared-ui-primary-container --directory=libs/shared/ui/primary-container
+
+```
+
 Define layout with context provider for each product
 
 ```
 yarn nx g @nx/react:lib rail-ui-layout --directory=libs/rail/ui/layout
-yarn nx g @nx/react:lib travel-ui-layout --directory=libs/travel/ui/layout
 ```
 
 shared UI - context agnostic components atoms and moleculas. base components for all applications

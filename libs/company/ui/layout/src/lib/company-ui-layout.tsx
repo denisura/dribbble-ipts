@@ -3,7 +3,7 @@ import { CompanyUiHeader } from '@ipts/company-ui-header';
 import { CompanyUiNavigationDrawer } from '@ipts/company-ui-navigation-drawer';
 import { CompanyUiFooter } from '@ipts/company-ui-footer';
 import { SharedUiHero } from '@ipts/shared-ui-hero';
-import { DrawerStateProvider } from '@ipts/company-ui-navigation-drawer';
+import { DrawerStateProvider } from '@ipts/shared-ui-drawer';
 
 import heroBackgroundUrl from './outer-space.jpg';
 

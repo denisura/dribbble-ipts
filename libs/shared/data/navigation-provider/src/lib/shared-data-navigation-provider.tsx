@@ -1,7 +1,7 @@
 import { createContext, useContext } from 'react';
 import invariant from 'invariant';
 
-type NavigationItem = {
+export type NavigationItem = {
   label?: string;
   to?: string;
   icon?: JSX.Element | null;

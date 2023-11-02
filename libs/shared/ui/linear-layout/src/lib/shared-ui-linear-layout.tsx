@@ -11,7 +11,6 @@ export const SharedUiLinearLayout = ({
   children,
 }: SharedUiLinearLayoutProps) => {
   const theme = useTheme();
-
   return (
     <Box
       sx={{
@@ -26,7 +25,7 @@ export const SharedUiLinearLayout = ({
           right: 0,
           width: '100%',
           maxHeight: '200px',
-          backgroundColor: theme.palette.primary.light,
+          backgroundColor: theme.palette.primary.main,
           mask: `url(${backgroundUrl})`,
           maskRepeat: 'repeat-x',
           maskPosition: 'bottom',

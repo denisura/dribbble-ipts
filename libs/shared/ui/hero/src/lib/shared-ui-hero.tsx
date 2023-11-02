@@ -4,6 +4,7 @@ import Collapse from '@mui/material/Collapse';
 import Fade from '@mui/material/Fade';
 import { useScrolledToTop } from '@ipts/shared-hooks';
 import { SharedUiBackgroundContainer } from '@ipts/shared-ui-background-container';
+import { useTheme } from '@ipts/shared-ui-theme';
 
 export interface SharedUiHeroProps {
   backgroundUrl: string;
@@ -17,6 +18,7 @@ export const SharedUiHero = ({
   subTitle,
 }: SharedUiHeroProps) => {
   const isScrolledToTop = useScrolledToTop();
+  const theme = useTheme();
 
   return (
     <>
@@ -46,7 +48,7 @@ export const SharedUiHero = ({
                 variant="h4"
                 component="div"
                 sx={{
-                  background: '#412859', //rgba(0,0,0,0.8)',
+                  background: theme.palette.primary.main,
                   pr: 1,
                   pl: 1,
                 }}
