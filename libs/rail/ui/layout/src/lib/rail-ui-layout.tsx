@@ -1,11 +1,11 @@
-import { TravelUiHeader } from '@ipts/travel-ui-header';
-import { TravelUiNavigationDrawer } from '@ipts/travel-ui-navigation-drawer';
-import { TravelUiFooter } from '@ipts/travel-ui-footer';
+import { RailUiHeader } from '@ipts/rail-ui-header';
+import { RailUiNavigationDrawer } from '@ipts/rail-ui-navigation-drawer';
+import { RailUiFooter } from '@ipts/rail-ui-footer';
 import { SharedUiHero } from '@ipts/shared-ui-hero';
 import { DrawerStateProvider } from '@ipts/shared-ui-drawer';
 import heroBackgroundUrl from '../assets/background.jpg';
 
-export interface TravelUiLayoutProps {
+export interface RailUiLayoutProps {
   drawerOpen?: boolean;
   children?: React.ReactNode;
   heroTitle: string | React.ReactNode;
@@ -13,28 +13,28 @@ export interface TravelUiLayoutProps {
   pageTitle: string | React.ReactNode;
 }
 
-export const TravelUiLayout = ({
+export const RailUiLayout = ({
   heroTitle,
   heroSubTitle = '',
   children,
   pageTitle,
-}: TravelUiLayoutProps) => {
+}: RailUiLayoutProps) => {
   return (
     <>
       <DrawerStateProvider>
-        <TravelUiHeader title={pageTitle}>
+        <RailUiHeader title={pageTitle}>
           <SharedUiHero
             backgroundUrl={heroBackgroundUrl}
             title={heroTitle}
             subTitle={heroSubTitle}
           />
-        </TravelUiHeader>
-        <TravelUiNavigationDrawer title={pageTitle} />
+        </RailUiHeader>
+        <RailUiNavigationDrawer title={pageTitle} />
       </DrawerStateProvider>
       {children}
-      <TravelUiFooter />
+      <RailUiFooter />
     </>
   );
 };
 
-export default TravelUiLayout;
+export default RailUiLayout;

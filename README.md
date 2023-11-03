@@ -152,6 +152,18 @@ yarn nx g @nx/react:lib travel-ui-popular-section --directory=libs/travel/ui/pop
 yarn nx g @nx/react:lib travel-ui-search-section  --directory=libs/travel/ui/search-section
 ```
 
+##Rail
+
+```
+yarn nx g @nx/react:lib rail-ui-layout --directory=libs/rail/ui/layout
+yarn nx g @nx/react:lib rail-ui-footer --directory=libs/rail/ui/footer
+yarn nx g @nx/react:lib rail-ui-header --directory=libs/rail/ui/header
+yarn nx g @nx/react:lib rail-ui-navigation-drawer --directory=libs/rail/ui/navigation-drawer
+yarn nx g @nx/react:lib rail-ui-subscription-section --directory=libs/rail/ui/subscription-section
+yarn nx g @nx/react:lib rail-ui-alerts-section --directory=libs/rail/ui/alerts-section
+yarn nx g @nx/react:lib rail-ui-search-section  --directory=libs/rail/ui/search-section
+```
+
 Extract navList to shred UI
 
 ```
