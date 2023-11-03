@@ -182,7 +182,14 @@ Extract navList to shared UI
 ```
 yarn nx g @nx/react:lib shared-ui-navigation-list --directory=libs/shared/ui/navigation/list
 yarn nx g @nx/react:lib shared-ui-primary-container --directory=libs/shared/ui/primary-container
+```
 
+### Move swiperSection to shared Ui
+
+```
+yarn nx g @nx/react:lib shared-ui-swiper-container --directory=libs/shared/ui/swiper-container
+yarn nx g @nx/react:lib shared-ui-caption-card --directory=libs/shared/ui/caption-card
+yarn nx g @nx/react:lib shared-ui-action-card --directory=libs/shared/ui/action-card
 ```
 
 Define layout with context provider for each product
