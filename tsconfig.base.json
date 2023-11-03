@@ -54,6 +54,9 @@
       "@ipts/rail-ui-theme-provider": [
         "libs/rail/ui/theme-provider/src/index.ts"
       ],
+      "@ipts/shared-data-bulletin-provider": [
+        "libs/shared/data/bulletin-provider/src/index.ts"
+      ],
       "@ipts/shared-data-navigation-provider": [
         "libs/shared/data/navigation-provider/src/index.ts"
       ],
@@ -61,6 +64,9 @@
       "@ipts/shared-router": ["libs/shared/router/src/index.ts"],
       "@ipts/shared-ui-background-container": [
         "libs/shared/ui/background-container/src/index.ts"
+      ],
+      "@ipts/shared-ui-bulletin-section": [
+        "libs/shared/ui/bulletin-section/src/index.ts"
       ],
       "@ipts/shared-ui-drawer": ["libs/shared/ui/drawer/src/index.ts"],
       "@ipts/shared-ui-header": ["libs/shared/ui/header/src/index.ts"],

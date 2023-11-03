@@ -164,7 +164,14 @@ yarn nx g @nx/react:lib rail-ui-alerts-section --directory=libs/rail/ui/alerts-s
 yarn nx g @nx/react:lib rail-ui-search-section  --directory=libs/rail/ui/search-section
 ```
 
-Extract navList to shred UI
+Extract bulletin section to shared library
+
+```
+yarn nx g @nx/react:lib shared-data-bulletin-provider --directory=libs/shared/data/bulletin-provider
+yarn nx g @nx/react:lib shared-ui-bulletin-section  --directory=libs/shared/ui/bulletin-section
+```
+
+Extract navList to shared UI
 
 ```
 yarn nx g @nx/react:lib shared-ui-navigation-list --directory=libs/shared/ui/navigation/list
