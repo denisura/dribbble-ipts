@@ -160,7 +160,6 @@ yarn nx g @nx/react:lib rail-ui-footer --directory=libs/rail/ui/footer
 yarn nx g @nx/react:lib rail-ui-header --directory=libs/rail/ui/header
 yarn nx g @nx/react:lib rail-ui-navigation-drawer --directory=libs/rail/ui/navigation-drawer
 yarn nx g @nx/react:lib rail-ui-subscription-section --directory=libs/rail/ui/subscription-section
-yarn nx g @nx/react:lib rail-ui-alerts-section --directory=libs/rail/ui/alerts-section
 yarn nx g @nx/react:lib rail-ui-search-section  --directory=libs/rail/ui/search-section
 ```
 
@@ -169,6 +168,13 @@ Extract bulletin section to shared library
 ```
 yarn nx g @nx/react:lib shared-data-bulletin-provider --directory=libs/shared/data/bulletin-provider
 yarn nx g @nx/react:lib shared-ui-bulletin-section  --directory=libs/shared/ui/bulletin-section
+```
+
+Rail: Alert section Data Provider and Presentation
+
+```
+yarn nx g @nx/react:lib rail-data-alert-provider --directory=libs/rail/data/alert-provider
+yarn nx g @nx/react:lib rail-ui-alerts-section --directory=libs/rail/ui/alerts-section
 ```
 
 Extract navList to shared UI

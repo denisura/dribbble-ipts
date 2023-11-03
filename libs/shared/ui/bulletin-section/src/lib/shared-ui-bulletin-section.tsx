@@ -16,6 +16,7 @@ export interface SharedUiBulletinSectionProps {
   showMore: () => void;
   hasMore: boolean;
   title: string;
+  color?: 'primary' | 'error';
 }
 
 export function SharedUiBulletinSection({
@@ -24,10 +25,11 @@ export function SharedUiBulletinSection({
   hasMore,
   showMore,
   title,
+  color = 'primary',
 }: SharedUiBulletinSectionProps) {
   return (
     <Container sx={{ pt: 4, pb: 8 }}>
-      <Typography variant="h6" gutterBottom>
+      <Typography variant="h6" gutterBottom color={color}>
         {title}
       </Typography>
       <List>

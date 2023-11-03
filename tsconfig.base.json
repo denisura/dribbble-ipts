@@ -36,6 +36,9 @@
       "@ipts/company-ui-theme-provider": [
         "libs/company/ui/theme-provider/src/index.ts"
       ],
+      "@ipts/rail-data-alert-provider": [
+        "libs/rail/data/alert-provider/src/index.ts"
+      ],
       "@ipts/rail-ui-alerts-section": [
         "libs/rail/ui/alerts-section/src/index.ts"
       ],

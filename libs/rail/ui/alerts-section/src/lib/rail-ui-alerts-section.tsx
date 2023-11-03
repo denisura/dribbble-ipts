@@ -1,14 +1,12 @@
 import styles from './rail-ui-alerts-section.module.scss';
 
-/* eslint-disable-next-line */
-export interface RailUiAlertsSectionProps {}
+import { useBulletinContext } from '@ipts/shared-data-bulletin-provider';
+import { SharedUiBulletinSection } from '@ipts/shared-ui-bulletin-section';
 
-export function RailUiAlertsSection(props: RailUiAlertsSectionProps) {
+export const RailUiAlertsSection = () => {
+  const data = useBulletinContext();
   return (
-    <div className={styles['container']}>
-      <h1>Welcome to Alerts!</h1>
-    </div>
+    <SharedUiBulletinSection title="Latest Alerts" {...data} color="error" />
   );
-}
-
+};
 export default RailUiAlertsSection;
