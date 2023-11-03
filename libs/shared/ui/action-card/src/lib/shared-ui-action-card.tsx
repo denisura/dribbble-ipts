@@ -26,7 +26,9 @@ export const SharedUiActionCard = ({
       <CardContent
         sx={{
           pr: '20%',
+          alignItems: 'end',
           background: 'linear-gradient(128deg, rgba(0,0,0,1), rgba(0,0,0,0))', // Dark gradient background
+          flexGrow: 1,
         }}
       >
         <Typography variant="h5" color="white" gutterBottom>
