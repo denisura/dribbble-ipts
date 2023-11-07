@@ -1,14 +1,24 @@
-import styles from './travel-ui-search-section.module.scss';
+import { SharedUiSearchHeader } from '@ipts/shared-ui-search-header';
+import { SharedUiPrimaryContainer } from '@ipts/shared-ui-primary-container';
 
-/* eslint-disable-next-line */
-export interface TravelUiSearchSectionProps {}
-
-export function TravelUiSearchSection(props: TravelUiSearchSectionProps) {
+export const TravelUiSearchSection = () => {
   return (
-    <div className={styles['container']}>
-      <h1>Welcome to TravelUiSearchSection!</h1>
-    </div>
+    <SharedUiPrimaryContainer
+      sx={{
+        minHeight: '10vh',
+        pt: 4,
+        pb: 4,
+        mb: 6,
+        position: 'relative',
+      }}
+    >
+      <SharedUiSearchHeader
+        title="Book your trip"
+        from={{ label: 'EAT', description: 'Florida' }}
+        to={{ label: 'TO', description: 'Your Destination' }}
+      />
+    </SharedUiPrimaryContainer>
   );
-}
+};
 
 export default TravelUiSearchSection;

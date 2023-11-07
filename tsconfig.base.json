@@ -90,6 +90,9 @@
       "@ipts/shared-ui-primary-container": [
         "libs/shared/ui/primary-container/src/index.ts"
       ],
+      "@ipts/shared-ui-search-header": [
+        "libs/shared/ui/search-header/src/index.ts"
+      ],
       "@ipts/shared-ui-subscription-form": [
         "libs/shared/ui/subscription-form/src/index.ts"
       ],

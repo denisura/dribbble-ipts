@@ -14,7 +14,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 export const SharedUiSwiperContainer = ({ children }: PropsWithChildren) => {
   return (
-    <Container maxWidth={false} sx={{ minHeight: 300 }} disableGutters>
+    <Container maxWidth={false} sx={{ minHeight: 300, mt: 4 }} disableGutters>
       <Swiper
         slidesPerView={'auto'}
         spaceBetween={16}

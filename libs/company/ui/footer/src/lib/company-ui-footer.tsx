@@ -22,21 +22,16 @@ export const CompanyUiFooter = ({ onClick }: CompanyUiFooterProps) => {
     >
       <SharedUiNavigationList navItems={secondary} color="inherit" />
 
-      {social && (
-        <>
-          <Typography variant="subtitle1" color="inherit" gutterBottom>
-            Follow Us
-          </Typography>
-
-          <Stack gap={1} direction="row" justifyContent="start">
-            {social.map(({ label, key, to, icon }) => (
-              <Link href={to} key={key} color="inherit">
-                {icon ? icon : label}
-              </Link>
-            ))}
-          </Stack>
-        </>
-      )}
+      <Typography variant="subtitle1" color="inherit" gutterBottom>
+        Follow Us
+      </Typography>
+      <Stack gap={1} direction="row" justifyContent="start">
+        {social.map(({ label, key, to, icon }) => (
+          <Link href={to} key={key} color="inherit">
+            {icon ? icon : label}
+          </Link>
+        ))}
+      </Stack>
     </SharedUiPrimaryContainer>
   );
 };

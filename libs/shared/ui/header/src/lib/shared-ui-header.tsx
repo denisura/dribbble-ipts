@@ -111,7 +111,6 @@ export const SharedUiHeader = ({
           }}
         />
       </Collapse>
-      <Box minHeight={theme.mixins.toolbar.minHeight}></Box>
     </>
   );
 };

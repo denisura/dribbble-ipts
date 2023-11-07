@@ -192,10 +192,18 @@ yarn nx g @nx/react:lib shared-ui-caption-card --directory=libs/shared/ui/captio
 yarn nx g @nx/react:lib shared-ui-action-card --directory=libs/shared/ui/action-card
 ```
 
+### Trip search form
+
+```
+yarn nx g @nx/react:lib shared-ui-search-header --directory=libs/shared/ui/search-header
+```
+
 Define layout with context provider for each product
 
 ```
+
 yarn nx g @nx/react:lib rail-ui-layout --directory=libs/rail/ui/layout
+
 ```
 
 shared UI - context agnostic components atoms and moleculas. base components for all applications
@@ -214,9 +222,11 @@ Challenge: Customize colors
 Customize theme for individual product
 
 ```
+
 yarn nx g @nx/react:lib company-ui-theme-provider --directory=libs/company/ui/theme-provider
 yarn nx g @nx/react:lib travel-ui-theme-provider --directory=libs/travel/ui/theme-provider
 yarn nx g @nx/react:lib rail-ui-theme-provider --directory=libs/rail/ui/theme-provider
+
 ```
 
 Package `company-ui-theme-provider` customizes default theme provider with specific theme for company product
@@ -232,14 +242,18 @@ TBD
 Project Graph
 
 ```
+
 yarn nx graph
+
 ```
 
 Add UI component
 
 ```
+
 yarn nx g @nx/react:component ThemeProvider --project=ui --export
 yarn nx g @nx/react:component <component-name> --project=ui --export
+
 ```
 
 ## Storybook
@@ -251,13 +265,17 @@ Follow https://nx.dev/recipes/storybook/one-storybook-for-all
 Create storybook host library
 
 ```
+
 yarn nx g @nx/react:library storybook-host --directory=libs/storybook-host --bundler=none --unitTestRunner=none --projectNameAndRootFormat=as-provided
+
 ```
 
 Configure the new library to use Storybook
 
 ```
+
 yarn nx g @nx/storybook:configuration storybook-host --interactionTests=true --uiFramework=@storybook/react-vite
+
 ```
 
 Clean up Storybook library
@@ -270,13 +288,15 @@ Create root directory for generic documentation `libs/storybook-host/src/docs/`.
 Specify pattern and locations for stories files exposed by Storybook in `libs/storybook-host/.storybook/main.ts`
 
 ```
+
 const config: StorybookConfig = {
-  stories: [
-    '../src/docs/**/*.stories.@(js|jsx|ts|tsx|mdx)',
-    '../../**/*-ui/**/src/lib/**/*.stories.@(js|jsx|ts|tsx|mdx)'
-  ],
-  ...
+stories: [
+'../src/docs/**/*.stories.@(js|jsx|ts|tsx|mdx)',
+'../../**/*-ui/**/src/lib/**/*.stories.@(js|jsx|ts|tsx|mdx)'
+],
+...
 };
+
 ```
 
 Create `overview` page in `getting started` section
@@ -284,6 +304,7 @@ Create `overview` page in `getting started` section
 Create `libs/storybook-host/src/docs/getting-started/overview/stories.mdx`.
 
 ```
+
 import { Meta } from '@storybook/blocks';
 
 <Meta title="Getting Started/Overview" />
@@ -295,15 +316,16 @@ import { Meta } from '@storybook/blocks';
 Define implicit dependencies on UI libraries `libs/storybook-host/project.json`
 
 ```
+
 {
-  ...
-  "tags": ["type:storybook"],
-  "implicitDependencies": [
-    "ipts-ui",
-    "rail-ui",
-    "travel-ui"
-  ],
-  ...
+...
+"tags": ["type:storybook"],
+"implicitDependencies": [
+"ipts-ui",
+"rail-ui",
+"travel-ui"
+],
+...
 }
 
 ```
@@ -311,7 +333,9 @@ Define implicit dependencies on UI libraries `libs/storybook-host/project.json`
 Serve storybook
 
 ```
+
 yarn nx storybook storybook-host
+
 ```
 
 ## Start the app
@@ -331,19 +355,25 @@ Learn more about [Nx generators on the docs](https://nx.dev/plugin-features/use-
 To execute tasks with Nx use the following syntax:
 
 ```
+
 nx <target> <project> <...options>
+
 ```
 
 You can also run multiple targets:
 
 ```
+
 nx run-many -t <target1> <target2>
+
 ```
 
 ..or add `-p` to filter specific projects
 
 ```
+
 nx run-many -t <target1> <target2> -p <proj1> <proj2>
+
 ```
 
 Targets can be defined in the `package.json` or `projects.json`. Learn more [in the docs](https://nx.dev/core-features/run-tasks).
@@ -375,7 +405,9 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 Rename package
 
 ```
+
 yarn nx g @nx/workspace:move --projectName ipts --destination company
+
 ```
 
 // // define default layout
@@ -435,9 +467,15 @@ yarn nx g @nx/workspace:move --projectName ipts --destination company
 TO remove Package
 
 ```
+
 yarn nx g @nx/workspace:remove --projectName your-project-full-name
 
 yarn nx g @nx/workspace:remove --projectName company-data-news-subscription-provider
 
 yarn nx g @nx/workspace:remove --projectName company-ui-news-subscription-section
+
+```
+
+```
+
 ```

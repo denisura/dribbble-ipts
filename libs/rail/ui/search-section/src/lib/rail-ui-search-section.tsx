@@ -1,14 +1,24 @@
-import styles from './rail-ui-search-section.module.scss';
+import { SharedUiSearchHeader } from '@ipts/shared-ui-search-header';
+import { SharedUiPrimaryContainer } from '@ipts/shared-ui-primary-container';
 
-/* eslint-disable-next-line */
-export interface RailUiSearchSectionProps {}
-
-export function RailUiSearchSection(props: RailUiSearchSectionProps) {
+export const RailUiSearchSection = () => {
   return (
-    <div className={styles['container']}>
-      <h1>Welcome to Search!</h1>
-    </div>
+    <SharedUiPrimaryContainer
+      sx={{
+        minHeight: '10vh',
+        pt: 4,
+        pb: 4,
+        mb: 6,
+        position: 'relative',
+      }}
+    >
+      <SharedUiSearchHeader
+        title="Flights schedule"
+        from={{ label: 'EAT', description: 'Florida' }}
+        to={{ label: 'TO', description: 'Any Destination' }}
+      />
+    </SharedUiPrimaryContainer>
   );
-}
+};
 
 export default RailUiSearchSection;
