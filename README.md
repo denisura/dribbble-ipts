@@ -87,6 +87,12 @@ yarn add @types/invariant -D
 yarn nx g @nx/react:lib shared-data-navigation-provider --directory=libs/shared/data/navigation-provider
 ```
 
+Create data providers for company site
+
+```
+yarn nx g @nx/react:lib company-data-navigation-provider --directory=libs/company/data/navigation-provider
+```
+
 Create context awared components for company product
 
 ```
@@ -140,7 +146,15 @@ Create logo
 yarn nx g @nx/react:lib shared-ui-logo --directory=libs/shared/ui/logo
 ```
 
-##Travel
+## Travel
+
+Create data providers for travel site
+
+```
+yarn nx g @nx/react:lib travel-data-navigation-provider --directory=libs/travel/data/navigation-provider
+```
+
+Create UI components for travel site landing page
 
 ```
 yarn nx g @nx/react:lib travel-ui-layout --directory=libs/travel/ui/layout
@@ -152,7 +166,15 @@ yarn nx g @nx/react:lib travel-ui-popular-section --directory=libs/travel/ui/pop
 yarn nx g @nx/react:lib travel-ui-search-section  --directory=libs/travel/ui/search-section
 ```
 
-##Rail
+## Rail
+
+Create data providers for travel site
+
+```
+yarn nx g @nx/react:lib rail-data-navigation-provider --directory=libs/rail/data/navigation-provider
+```
+
+Create UI components for travel site landing page
 
 ```
 yarn nx g @nx/react:lib rail-ui-layout --directory=libs/rail/ui/layout
