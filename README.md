@@ -394,6 +394,24 @@ Create alias to run stroybook app as any other apps
 yarn nx g @nrwl/workspace:run-commands serve --command "nx run storybook:storybook" --project storybook
 ```
 
+get the list of all projects required stories
+
+```
+yarn nx show projects --projects "**-ui**"
+```
+
+Generate stories for each library
+
+```
+yarn nx g @nx/react:stories --project company-ui-news-subscription-section
+yarn nx g @nx/react:stories --project travel-ui-deal-subscription-section
+yarn nx g @nx/react:stories --project rail-ui-subscription-section
+yarn nx g @nx/react:stories --project shared-ui-subscription-form
+
+```
+
+## Generate code
+
 ## Generate code
 
 If you happen to use Nx plugins, you can leverage code generators that might come with it.
