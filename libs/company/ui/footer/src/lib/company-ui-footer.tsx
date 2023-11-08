@@ -1,8 +1,7 @@
-import Typography from '@mui/material/Typography';
 import { useNavigationContext } from '@ipts/shared-data-navigation-provider';
-import { Link, Stack } from '@mui/material';
 import { PrimaryContainer } from '@ipts/shared/ui/container';
 import { SharedUiNavigationList } from '@ipts/shared-ui-navigation-list';
+import { SharedUiNavigationStack } from '@ipts/shared-ui-navigation-stack';
 
 export interface CompanyUiFooterProps {
   onClick?: () => void;
@@ -21,17 +20,7 @@ export const CompanyUiFooter = ({ onClick }: CompanyUiFooterProps) => {
       }}
     >
       <SharedUiNavigationList navItems={secondary} color="inherit" />
-
-      <Typography variant="subtitle1" color="inherit" gutterBottom>
-        Follow Us
-      </Typography>
-      <Stack gap={1} direction="row" justifyContent="start">
-        {social.map(({ label, key, to, icon }) => (
-          <Link href={to} key={key} color="inherit">
-            {icon ? icon : label}
-          </Link>
-        ))}
-      </Stack>
+      <SharedUiNavigationStack subtitle="Find us" navItems={social} />
     </PrimaryContainer>
   );
 };

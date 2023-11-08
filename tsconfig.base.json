@@ -93,6 +93,9 @@
       "@ipts/shared-ui-navigation-list": [
         "libs/shared/ui/navigation/list/src/index.ts"
       ],
+      "@ipts/shared-ui-navigation-stack": [
+        "libs/shared/ui/navigation/stack/src/index.ts"
+      ],
       "@ipts/shared-ui-search-header": [
         "libs/shared/ui/search-header/src/index.ts"
       ],
