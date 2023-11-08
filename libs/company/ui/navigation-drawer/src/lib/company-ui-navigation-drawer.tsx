@@ -5,10 +5,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { useNavigationContext } from '@ipts/shared-data-navigation-provider';
-import { Container, Link, Stack } from '@mui/material';
-import { SharedUiPrimaryContainer } from '@ipts/shared-ui-primary-container';
+import { Container } from '@mui/material';
 import { SharedUiDrawer } from '@ipts/shared-ui-drawer';
-import { SharedUiNavigationList } from '@ipts/shared-ui-navigation-list';
 import { CompanyUiFooter } from '@ipts/company-ui-footer';
 
 export interface CompanyUiNavigationDrawerProps {
@@ -18,7 +16,7 @@ export interface CompanyUiNavigationDrawerProps {
 export const CompanyUiNavigationDrawer = ({
   title,
 }: CompanyUiNavigationDrawerProps) => {
-  const { main, secondary, social } = useNavigationContext();
+  const { main } = useNavigationContext();
 
   return (
     <SharedUiDrawer>

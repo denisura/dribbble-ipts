@@ -1,5 +1,5 @@
 {
-  "name": "@ipts/shared-ui-primary-container",
+  "name": "@ipts/shared/ui/container",
   "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",

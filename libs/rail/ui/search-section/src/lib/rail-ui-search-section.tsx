@@ -1,9 +1,9 @@
 import { SharedUiSearchHeader } from '@ipts/shared-ui-search-header';
-import { SharedUiPrimaryContainer } from '@ipts/shared-ui-primary-container';
+import { PrimaryContainer } from '@ipts/shared/ui/container';
 
 export const RailUiSearchSection = () => {
   return (
-    <SharedUiPrimaryContainer
+    <PrimaryContainer
       sx={{
         minHeight: '10vh',
         pt: 4,
@@ -17,7 +17,7 @@ export const RailUiSearchSection = () => {
         from={{ label: 'EAT', description: 'Florida' }}
         to={{ label: 'TO', description: 'Any Destination' }}
       />
-    </SharedUiPrimaryContainer>
+    </PrimaryContainer>
   );
 };
 

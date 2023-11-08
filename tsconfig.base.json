@@ -93,9 +93,6 @@
       "@ipts/shared-ui-navigation-list": [
         "libs/shared/ui/navigation/list/src/index.ts"
       ],
-      "@ipts/shared-ui-primary-container": [
-        "libs/shared/ui/primary-container/src/index.ts"
-      ],
       "@ipts/shared-ui-search-header": [
         "libs/shared/ui/search-header/src/index.ts"
       ],
@@ -109,6 +106,7 @@
       "@ipts/shared-ui-theme-provider": [
         "libs/shared/ui/theme-provider/src/index.ts"
       ],
+      "@ipts/shared/ui/container": ["libs/shared/ui/container/src/index.ts"],
       "@ipts/storybook-host": ["libs/storybook-host/src/index.ts"],
       "@ipts/travel-data-navigation-provider": [
         "libs/travel/data/navigation-provider/src/index.ts"

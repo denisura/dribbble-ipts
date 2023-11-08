@@ -1,11 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'shared-ui-primary-container',
+  displayName: 'shared-ui-container',
   preset: '../../../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/react/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../../coverage/libs/shared/ui/primary-container',
+  coverageDirectory: '../../../../coverage/libs/shared/ui/container',
 };

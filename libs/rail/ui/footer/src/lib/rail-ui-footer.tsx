@@ -1,6 +1,6 @@
 import { useNavigationContext } from '@ipts/shared-data-navigation-provider';
 import { SharedUiNavigationList } from '@ipts/shared-ui-navigation-list';
-import { SharedUiPrimaryContainer } from '@ipts/shared-ui-primary-container';
+import { PrimaryContainer } from '@ipts/shared/ui/container';
 
 export interface RailUiFooterProps {
   onClick?: () => void;
@@ -10,7 +10,7 @@ export const RailUiFooter = ({ onClick }: RailUiFooterProps) => {
   const { secondary } = useNavigationContext();
 
   return (
-    <SharedUiPrimaryContainer
+    <PrimaryContainer
       sx={{
         textAlign: 'start',
         pb: 4,
@@ -19,7 +19,7 @@ export const RailUiFooter = ({ onClick }: RailUiFooterProps) => {
       onClick={onClick}
     >
       <SharedUiNavigationList navItems={secondary} color="inherit" />
-    </SharedUiPrimaryContainer>
+    </PrimaryContainer>
   );
 };
 

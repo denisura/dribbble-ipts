@@ -1,7 +1,7 @@
 import Typography from '@mui/material/Typography';
 import { useNavigationContext } from '@ipts/shared-data-navigation-provider';
 import { Link, Stack } from '@mui/material';
-import { SharedUiPrimaryContainer } from '@ipts/shared-ui-primary-container';
+import { PrimaryContainer } from '@ipts/shared/ui/container';
 import { SharedUiNavigationList } from '@ipts/shared-ui-navigation-list';
 
 export interface CompanyUiFooterProps {
@@ -12,7 +12,7 @@ export const CompanyUiFooter = ({ onClick }: CompanyUiFooterProps) => {
   const { secondary, social } = useNavigationContext();
 
   return (
-    <SharedUiPrimaryContainer
+    <PrimaryContainer
       onClick={onClick}
       sx={{
         textAlign: 'start',
@@ -32,7 +32,7 @@ export const CompanyUiFooter = ({ onClick }: CompanyUiFooterProps) => {
           </Link>
         ))}
       </Stack>
-    </SharedUiPrimaryContainer>
+    </PrimaryContainer>
   );
 };
 
