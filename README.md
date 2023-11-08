@@ -1,5 +1,34 @@
 ## Getting started
 
+Install Dependencies
+
+```
+yarn install
+```
+
+Start all sites and storybook
+
+```
+yarn nx  run-many -t serve -p company travel rail storybook --parallel=4
+```
+
+yarn nx storybook storybook-host
+
+| App       | URL            |
+| --------- | -------------- |
+| company   | localhost:4201 |
+| travel    | localhost:4202 |
+| rail      | localhost:4203 |
+| storybook | localhost:4400 |
+
+Start all sites and storybook
+
+```
+yarn nx  run-many -t serve -p company travel rail storybook --parallel=4
+```
+
+## Process
+
 Create monorepo
 
 ```
@@ -288,7 +317,7 @@ Create storybook host library
 
 ```
 
-yarn nx g @nx/react:library storybook-host --directory=libs/storybook-host --bundler=none --unitTestRunner=none --projectNameAndRootFormat=as-provided
+yarn nx g @nx/react:library storybook --directory=apps/storybook --bundler=none --unitTestRunner=none --projectNameAndRootFormat=as-provided
 
 ```
 
@@ -296,18 +325,18 @@ Configure the new library to use Storybook
 
 ```
 
-yarn nx g @nx/storybook:configuration storybook-host --interactionTests=true --uiFramework=@storybook/react-vite
+yarn nx g @nx/storybook:configuration storybook --interactionTests=true --uiFramework=@storybook/react-vite
 
 ```
 
 Clean up Storybook library
 
 - Delete the contents of the `src/libs`.
-- Delete the `lint` target in `libs/storybook-host/project.json`.
+- Delete the `lint` target in `apps/storybook/project.json`.
 
-Create root directory for generic documentation `libs/storybook-host/src/docs/`.
+Create root directory for generic documentation `apps/storybook/src/docs/`.
 
-Specify pattern and locations for stories files exposed by Storybook in `libs/storybook-host/.storybook/main.ts`
+Specify pattern and locations for stories files exposed by Storybook in `apps/storybook/.storybook/main.ts`
 
 ```
 
@@ -323,7 +352,7 @@ stories: [
 
 Create `overview` page in `getting started` section
 
-Create `libs/storybook-host/src/docs/getting-started/overview/stories.mdx`.
+Create `apps/storybook/src/docs/getting-started/overview/stories.mdx`.
 
 ```
 
@@ -335,7 +364,7 @@ import { Meta } from '@storybook/blocks';
 
 ```
 
-Define implicit dependencies on UI libraries `libs/storybook-host/project.json`
+Define implicit dependencies on UI libraries `apps/storybook/project.json`
 
 ```
 
@@ -355,14 +384,15 @@ Define implicit dependencies on UI libraries `libs/storybook-host/project.json`
 Serve storybook
 
 ```
-
-yarn nx storybook storybook-host
+yarn nx storybook storybook
 
 ```
 
-## Start the app
+Create alias to run stroybook app as any other apps
 
-To start the development server run `nx serve ipts`. Open your browser and navigate to http://localhost:4200/. Happy coding!
+```
+yarn nx g @nrwl/workspace:run-commands serve --command "nx run storybook:storybook" --project storybook
+```
 
 ## Generate code
 
@@ -404,10 +434,6 @@ Targets can be defined in the `package.json` or `projects.json`. Learn more [in 
 
 Have a look at the [Nx Console extensions](https://nx.dev/nx-console). It provides autocomplete support, a UI for exploring and running tasks & generators, and more! Available for VSCode, IntelliJ and comes with a LSP for Vim users.
 
-## Ready to deploy?
-
-Just run `nx build demoapp` to build the application. The build artifacts will be stored in the `dist/` directory, ready to be deployed.
-
 ## Set up CI!
 
 Nx comes with local caching already built-in (check your `nx.json`). On CI you might want to go a step further.
@@ -416,20 +442,24 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 - [Set up task distribution across multiple machines](https://nx.dev/core-features/distribute-task-execution)
 - [Learn more how to setup CI](https://nx.dev/recipes/ci)
 
-## Connect with us!
+## Code Refactoring
 
-- [Join the community](https://nx.dev/community)
-- [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
-- [Follow us on Twitter](https://twitter.com/nxdevtools)
-
-## Maintenance
-
-Rename package
+To rename package
 
 ```
-
 yarn nx g @nx/workspace:move --projectName ipts --destination company
+```
 
+To add component to the shared library
+
+```
+yarn nx g @nrwl/react:component drawer-header --project=shared-ui-drawer --export --style 'none'
+```
+
+To remove library
+
+```
+yarn nx g @nx/workspace:remove --projectName your-project-full-name
 ```
 
 // // define default layout
@@ -485,19 +515,3 @@ yarn nx g @nx/workspace:move --projectName ipts --destination company
 // //appbar
 // //menu list
 // //list item
-
-TO remove Package
-
-```
-
-yarn nx g @nx/workspace:remove --projectName your-project-full-name
-
-yarn nx g @nx/workspace:remove --projectName company-data-news-subscription-provider
-
-yarn nx g @nx/workspace:remove --projectName company-ui-news-subscription-section
-
-```
-
-```
-
-```

@@ -1,7 +1,7 @@
 {
-  "name": "storybook-host",
+  "name": "storybook",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/storybook-host/src",
+  "sourceRoot": "apps/storybook/src",
   "projectType": "library",
   "tags": ["type:storybook"],
   "implicitDependencies": [
@@ -14,7 +14,7 @@
       "executor": "@nx/storybook:storybook",
       "options": {
         "port": 4400,
-        "configDir": "libs/storybook-host/.storybook"
+        "configDir": "apps/storybook/.storybook"
       },
       "configurations": {
         "ci": {
@@ -26,8 +26,8 @@
       "executor": "@nx/storybook:build",
       "outputs": ["{options.outputDir}"],
       "options": {
-        "outputDir": "dist/storybook/storybook-host",
-        "configDir": "libs/storybook-host/.storybook"
+        "outputDir": "dist/storybook/storybook",
+        "configDir": "apps/storybook/.storybook"
       },
       "configurations": {
         "ci": {
@@ -38,7 +38,14 @@
     "test-storybook": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "test-storybook -c libs/storybook-host/.storybook --url=http://localhost:4400"
+        "command": "test-storybook -c apps/storybook/.storybook --url=http://localhost:4400"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "nx run storybook:storybook"
       }
     }
   }

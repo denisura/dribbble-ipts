@@ -111,7 +111,7 @@
         "libs/shared/ui/theme-provider/src/index.ts"
       ],
       "@ipts/shared/ui/container": ["libs/shared/ui/container/src/index.ts"],
-      "@ipts/storybook-host": ["libs/storybook-host/src/index.ts"],
+      "@ipts/storybook": ["apps/storybook/src/index.ts"],
       "@ipts/travel-data-navigation-provider": [
         "libs/travel/data/navigation-provider/src/index.ts"
       ],
