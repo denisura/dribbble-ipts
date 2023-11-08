@@ -86,6 +86,7 @@
       "@ipts/shared-ui-drawer": ["libs/shared/ui/drawer/src/index.ts"],
       "@ipts/shared-ui-header": ["libs/shared/ui/header/src/index.ts"],
       "@ipts/shared-ui-hero": ["libs/shared/ui/hero/src/index.ts"],
+      "@ipts/shared-ui-icons": ["libs/shared/ui/icons/src/index.ts"],
       "@ipts/shared-ui-linear-layout": [
         "libs/shared/ui/linear-layout/src/index.ts"
       ],
