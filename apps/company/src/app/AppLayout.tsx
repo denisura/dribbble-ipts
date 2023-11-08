@@ -1,7 +1,7 @@
 import { Outlet } from '@ipts/shared-router';
-import { CompanyDataNavigationProvider } from '@ipts/company-data-navigation-provider';
-import { CompanyUiLayout } from '@ipts/company-ui-layout';
 import { LogoVIcon, LogoHO } from '@ipts/shared-ui-logo';
+import { CompanyDataNavigationProvider } from '@ipts/company-data-navigation-provider';
+import { CompanyUiLayout } from '@ipts/company-ui';
 
 export const AppLayout = () => {
   return (

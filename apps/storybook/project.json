@@ -5,7 +5,7 @@
   "projectType": "library",
   "tags": ["type:storybook"],
   "implicitDependencies": [
-    "company-ui-theme-provider",
+    "company-ui",
     "rail-ui-theme-provider",
     "travel-ui-theme-provider"
   ],

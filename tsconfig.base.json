@@ -21,24 +21,7 @@
       "@ipts/company-data-news-provider": [
         "libs/company/data/news-provider/src/index.ts"
       ],
-      "@ipts/company-ui-footer": ["libs/company/ui/footer/src/index.ts"],
-      "@ipts/company-ui-header": ["libs/company/ui/header/src/index.ts"],
-      "@ipts/company-ui-intro-section": [
-        "libs/company/ui/intro-section/src/index.ts"
-      ],
-      "@ipts/company-ui-layout": ["libs/company/ui/layout/src/index.ts"],
-      "@ipts/company-ui-navigation-drawer": [
-        "libs/company/ui/navigation-drawer/src/index.ts"
-      ],
-      "@ipts/company-ui-news-section": [
-        "libs/company/ui/news-section/src/index.ts"
-      ],
-      "@ipts/company-ui-news-subscription-section": [
-        "libs/company/ui/news-subscription-section/src/index.ts"
-      ],
-      "@ipts/company-ui-theme-provider": [
-        "libs/company/ui/theme-provider/src/index.ts"
-      ],
+      "@ipts/company-ui": ["libs/company/ui/src/index.ts"],
       "@ipts/rail-data-alert-provider": [
         "libs/rail/data/alert-provider/src/index.ts"
       ],
