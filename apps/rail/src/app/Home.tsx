@@ -1,9 +1,12 @@
 import { SharedUiLinearLayout } from '@ipts/shared-ui-linear-layout';
-import background from '../assets/rail-background.svg';
-import { RailUiSubscriptionSection } from '@ipts/rail-ui-subscription-section';
-import { RailUiSearchSection } from '@ipts/rail-ui-search-section';
-import { RailUiAlertsSection } from '@ipts/rail-ui-alerts-section';
+import {
+  RailUiSubscriptionSection,
+  RailUiSearchSection,
+  RailUiAlertsSection,
+} from '@ipts/rail-ui';
 import { RailDataAlertProvider } from '@ipts/rail-data-alert-provider';
+
+import background from '../assets/rail-background.svg';
 
 export const Home = () => {
   return (

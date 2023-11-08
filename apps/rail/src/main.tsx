@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import { RailUiThemeProvider } from '@ipts/rail-ui-theme-provider';
+import { RailUiThemeProvider } from '@ipts/rail-ui';
 import { BrowserRouter } from '@ipts/shared-router';
 
 import App from './app/app';

@@ -28,24 +28,7 @@
       "@ipts/rail-data-navigation-provider": [
         "libs/rail/data/navigation-provider/src/index.ts"
       ],
-      "@ipts/rail-ui-alerts-section": [
-        "libs/rail/ui/alerts-section/src/index.ts"
-      ],
-      "@ipts/rail-ui-footer": ["libs/rail/ui/footer/src/index.ts"],
-      "@ipts/rail-ui-header": ["libs/rail/ui/header/src/index.ts"],
-      "@ipts/rail-ui-layout": ["libs/rail/ui/layout/src/index.ts"],
-      "@ipts/rail-ui-navigation-drawer": [
-        "libs/rail/ui/navigation-drawer/src/index.ts"
-      ],
-      "@ipts/rail-ui-search-section": [
-        "libs/rail/ui/search-section/src/index.ts"
-      ],
-      "@ipts/rail-ui-subscription-section": [
-        "libs/rail/ui/subscription-section/src/index.ts"
-      ],
-      "@ipts/rail-ui-theme-provider": [
-        "libs/rail/ui/theme-provider/src/index.ts"
-      ],
+      "@ipts/rail-ui": ["libs/rail/ui/src/index.ts"],
       "@ipts/shared-data-bulletin-provider": [
         "libs/shared/data/bulletin-provider/src/index.ts"
       ],

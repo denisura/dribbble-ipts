@@ -1,6 +1,6 @@
 import { Outlet } from '@ipts/shared-router';
 import { RailDataNavigationProvider } from '@ipts/rail-data-navigation-provider';
-import { RailUiLayout } from '@ipts/rail-ui-layout';
+import { RailUiLayout } from '@ipts/rail-ui';
 import { LogoVIcon, LogoHO } from '@ipts/shared-ui-logo';
 
 export const AppLayout = () => {
