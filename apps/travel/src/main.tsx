@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import { TravelUiThemeProvider } from '@ipts/travel-ui-theme-provider';
+import { TravelUiThemeProvider } from '@ipts/travel-ui';
 import { BrowserRouter } from '@ipts/shared-router';
 
 import App from './app/app';

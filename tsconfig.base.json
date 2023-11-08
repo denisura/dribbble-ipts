@@ -81,24 +81,7 @@
       "@ipts/travel-data-navigation-provider": [
         "libs/travel/data/navigation-provider/src/index.ts"
       ],
-      "@ipts/travel-ui-deal-subscription-section": [
-        "libs/travel/ui/deal-subscription-section/src/index.ts"
-      ],
-      "@ipts/travel-ui-footer": ["libs/travel/ui/footer/src/index.ts"],
-      "@ipts/travel-ui-header": ["libs/travel/ui/header/src/index.ts"],
-      "@ipts/travel-ui-layout": ["libs/travel/ui/layout/src/index.ts"],
-      "@ipts/travel-ui-navigation-drawer": [
-        "libs/travel/ui/navigation-drawer/src/index.ts"
-      ],
-      "@ipts/travel-ui-popular-section": [
-        "libs/travel/ui/popular-section/src/index.ts"
-      ],
-      "@ipts/travel-ui-search-section": [
-        "libs/travel/ui/search-section/src/index.ts"
-      ],
-      "@ipts/travel-ui-theme-provider": [
-        "libs/travel/ui/theme-provider/src/index.ts"
-      ]
+      "@ipts/travel-ui": ["libs/travel/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

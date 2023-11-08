@@ -536,20 +536,15 @@ yarn nx g @nx/workspace:remove --projectName your-project-full-name
 
 # Big code refactoring
 
-Move rail ui packages to company-ui package
+yarn nx g @nx/react:lib travel-ui --directory=libs/travel-ui
 
-yarn nx g @nx/react:lib my-rail-ui --directory=libs/my-rail-ui
+yarn nx g @nx/workspace:remove --projectName travel-ui-deal-subscription-section
+yarn nx g @nx/workspace:remove --projectName travel-ui-navigation-drawer
+yarn nx g @nx/workspace:remove --projectName travel-ui-popular-section
+yarn nx g @nx/workspace:remove --projectName travel-ui-search-section
+yarn nx g @nx/workspace:remove --projectName travel-ui-theme-provider
+yarn nx g @nx/workspace:remove --projectName travel-ui-header
+yarn nx g @nx/workspace:remove --projectName travel-ui-footer
+yarn nx g @nx/workspace:remove --projectName travel-ui-layout
 
-yarn nx g @nx/js:lib rail-ui --directory=libs/rail-ui
-
-yarn nx g @nx/workspace:remove --projectName rail-ui-subscription-section
-yarn nx g @nx/workspace:remove --projectName rail-ui-navigation-drawer
-yarn nx g @nx/workspace:remove --projectName rail-ui-theme-provider
-yarn nx g @nx/workspace:remove --projectName rail-ui-search-section
-yarn nx g @nx/workspace:remove --projectName rail-ui-alerts-section
-yarn nx g @nx/workspace:remove --projectName rail-ui-layout
-yarn nx g @nx/workspace:remove --projectName rail-ui-footer
-yarn nx g @nx/workspace:remove --projectName rail-ui-header
-
-yarn nx g @nx/workspace:move --projectName my-rail-ui --destination libs/rail-ui
-yarn nx g @nx/workspace:move --projectName rail-ui --destination libs/rail/ui
+yarn nx g @nx/workspace:move --projectName travel-ui --destination libs/travel/ui
