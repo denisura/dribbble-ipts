@@ -1,11 +1,13 @@
+import {
+  SharedUiCaptionCard,
+  SharedUiActionCard,
+  SharedUiSwiperContainer,
+} from '@ipts/core/ui';
+
 import space from '../../assets/space.jpg';
 import open from '../../assets/open-space.jpg';
 import planets from '../../assets/planets-art.jpg';
 import travel from '../../assets/travel.webp';
-
-import { SharedUiCaptionCard } from '@ipts/shared-ui-caption-card';
-import { SharedUiActionCard } from '@ipts/shared-ui-action-card';
-import { SharedUiSwiperContainer } from '@ipts/shared-ui-swiper-container';
 
 const points = [
   {

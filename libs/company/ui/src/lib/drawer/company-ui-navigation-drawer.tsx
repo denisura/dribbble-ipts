@@ -1,6 +1,9 @@
-import { useNavigationContext } from '@ipts/shared-data-navigation-provider';
-import { SharedUiDrawer, DrawerHeader } from '@ipts/shared-ui-drawer';
-import { SharedUiNavigationList } from '@ipts/shared-ui-navigation-list';
+import { useNavigationContext } from '@ipts/core-data-navigation-provider';
+import {
+  SharedUiDrawer,
+  DrawerHeader,
+  SharedUiNavigationList,
+} from '@ipts/core/ui';
 
 import Footer from '../footer/company-ui-footer';
 

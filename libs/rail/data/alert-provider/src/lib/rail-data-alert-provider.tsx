@@ -1,4 +1,4 @@
-import { SharedDataBulletinProvider } from '@ipts/shared-data-bulletin-provider';
+import { SharedDataBulletinProvider } from '@ipts/core-data-bulletin-provider';
 
 export interface RailDataAlertProviderProps {
   children?: React.ReactNode;

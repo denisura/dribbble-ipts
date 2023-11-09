@@ -3,9 +3,11 @@ import placeB from '../assets/place-b.jpeg';
 import placeC from '../assets/place-c.jpeg';
 import placeD from '../assets/place-d.jpeg';
 
-import { SharedUiCaptionCard } from '@ipts/shared-ui-caption-card';
-import { SharedUiActionCard } from '@ipts/shared-ui-action-card';
-import { SharedUiSwiperContainer } from '@ipts/shared-ui-swiper-container';
+import {
+  SharedUiActionCard,
+  SharedUiCaptionCard,
+  SharedUiSwiperContainer,
+} from '@ipts/core/ui';
 
 const points = [
   {

@@ -134,8 +134,8 @@ yarn nx g @nx/react:lib company-ui-navigation-drawer --directory=libs/company/ui
 Extract context agnostic components into shared packages
 
 ```
-yarn nx g @nx/react:lib shared-hooks --directory=libs/shared/hooks
-yarn nx g @nrwl/react:component useScrolledToTop --project=shared-hooks
+yarn nx g @nx/react:lib core-hooks --directory=libs/shared/hooks
+yarn nx g @nrwl/react:component useScrolledToTop --project=core-hooks
 ```
 
 News section Data Provider and Presentation
@@ -533,18 +533,3 @@ yarn nx g @nx/workspace:remove --projectName your-project-full-name
 // //appbar
 // //menu list
 // //list item
-
-# Big code refactoring
-
-yarn nx g @nx/react:lib travel-ui --directory=libs/travel-ui
-
-yarn nx g @nx/workspace:remove --projectName travel-ui-deal-subscription-section
-yarn nx g @nx/workspace:remove --projectName travel-ui-navigation-drawer
-yarn nx g @nx/workspace:remove --projectName travel-ui-popular-section
-yarn nx g @nx/workspace:remove --projectName travel-ui-search-section
-yarn nx g @nx/workspace:remove --projectName travel-ui-theme-provider
-yarn nx g @nx/workspace:remove --projectName travel-ui-header
-yarn nx g @nx/workspace:remove --projectName travel-ui-footer
-yarn nx g @nx/workspace:remove --projectName travel-ui-layout
-
-yarn nx g @nx/workspace:move --projectName travel-ui --destination libs/travel/ui

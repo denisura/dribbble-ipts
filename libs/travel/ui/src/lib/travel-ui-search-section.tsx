@@ -1,5 +1,4 @@
-import { SharedUiSearchHeader } from '@ipts/shared-ui-search-header';
-import { PrimaryContainer } from '@ipts/shared/ui/container';
+import { PrimaryContainer, SharedUiSearchHeader } from '@ipts/core/ui';
 
 export const TravelUiSearchSection = () => {
   return (

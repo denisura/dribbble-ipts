@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { TravelUiThemeProvider } from '@ipts/travel-ui';
-import { BrowserRouter } from '@ipts/shared-router';
+import { BrowserRouter } from '@ipts/core-router';
 
 import App from './app/app';
 

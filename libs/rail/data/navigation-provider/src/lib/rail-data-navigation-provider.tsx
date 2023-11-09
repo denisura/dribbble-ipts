@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import { SharedDataNavigationProvider } from '@ipts/shared-data-navigation-provider';
+import { SharedDataNavigationProvider } from '@ipts/core-data-navigation-provider';
 
 export const RailDataNavigationProvider = (props: PropsWithChildren) => {
   const main = [

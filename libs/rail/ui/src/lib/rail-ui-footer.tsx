@@ -1,6 +1,5 @@
-import { useNavigationContext } from '@ipts/shared-data-navigation-provider';
-import { SharedUiNavigationList } from '@ipts/shared-ui-navigation-list';
-import { PrimaryContainer } from '@ipts/shared/ui/container';
+import { useNavigationContext } from '@ipts/core-data-navigation-provider';
+import { PrimaryContainer, SharedUiNavigationList } from '@ipts/core/ui';
 
 export interface RailUiFooterProps {
   onClick?: () => void;

@@ -1,7 +1,9 @@
-import { useNavigationContext } from '@ipts/shared-data-navigation-provider';
-import { PrimaryContainer } from '@ipts/shared/ui/container';
-import { SharedUiNavigationList } from '@ipts/shared-ui-navigation-list';
-import { SharedUiNavigationStack } from '@ipts/shared-ui-navigation-stack';
+import { useNavigationContext } from '@ipts/core-data-navigation-provider';
+import {
+  PrimaryContainer,
+  SharedUiNavigationList,
+  SharedUiNavigationStack,
+} from '@ipts/core/ui';
 
 export interface CompanyUiFooterProps {
   onClick?: () => void;

@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react';
-import { SharedDataNavigationProvider } from '@ipts/shared-data-navigation-provider';
-import { Facebook, Instagram, Twitter, YouTube } from '@ipts/shared-ui-icons';
+import { SharedDataNavigationProvider } from '@ipts/core-data-navigation-provider';
+import { Facebook, Instagram, Twitter, YouTube } from '@ipts/core/ui';
 
 export const CompanyDataNavigationProvider = (props: PropsWithChildren) => {
   const main = [

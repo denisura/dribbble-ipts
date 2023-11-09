@@ -1,5 +1,8 @@
-import { SharedUiThemeProvider } from '@ipts/shared-ui-theme-provider';
-import { defaultTheme, createTheme } from '@ipts/shared-ui-theme';
+import {
+  SharedUiThemeProvider,
+  defaultTheme,
+  createTheme,
+} from '@ipts/core/ui';
 
 export interface CompanyUiThemeProviderProps {
   children?: React.ReactNode;

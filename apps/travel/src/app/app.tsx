@@ -1,4 +1,4 @@
-import { Routes, Route } from '@ipts/shared-router';
+import { Routes, Route } from '@ipts/core-router';
 
 import AppLayout from './AppLayout';
 import Home from './Home';

@@ -1,5 +1,9 @@
-import { SharedUiThemeProvider } from '@ipts/shared-ui-theme-provider';
-import { defaultTheme, createTheme } from '@ipts/shared-ui-theme';
+import { PropsWithChildren } from 'react';
+import {
+  SharedUiThemeProvider,
+  defaultTheme,
+  createTheme,
+} from '@ipts/core/ui';
 
 const sharedTheme = createTheme(defaultTheme, {
   palette: {
@@ -18,13 +22,8 @@ const sharedTheme = createTheme(defaultTheme, {
     },
   },
 });
-export interface TravelUiThemeProviderProps {
-  children?: React.ReactNode;
-}
 
-export const TravelUiThemeProvider = ({
-  children,
-}: TravelUiThemeProviderProps) => (
+export const TravelUiThemeProvider = ({ children }: PropsWithChildren) => (
   <SharedUiThemeProvider theme={sharedTheme}>{children}</SharedUiThemeProvider>
 );
 

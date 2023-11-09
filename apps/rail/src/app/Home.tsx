@@ -1,4 +1,3 @@
-import { SharedUiLinearLayout } from '@ipts/shared-ui-linear-layout';
 import {
   RailUiSubscriptionSection,
   RailUiSearchSection,
@@ -6,17 +5,15 @@ import {
 } from '@ipts/rail-ui';
 import { RailDataAlertProvider } from '@ipts/rail-data-alert-provider';
 
-import background from '../assets/rail-background.svg';
-
 export const Home = () => {
   return (
-    <SharedUiLinearLayout backgroundUrl={background}>
+    <>
       <RailUiSearchSection />
       <RailDataAlertProvider>
         <RailUiAlertsSection />
       </RailDataAlertProvider>
       <RailUiSubscriptionSection />
-    </SharedUiLinearLayout>
+    </>
   );
 };
 

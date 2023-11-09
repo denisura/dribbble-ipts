@@ -1,10 +1,14 @@
-import { SharedUiHero } from '@ipts/shared-ui-hero';
-import { DrawerStateProvider } from '@ipts/shared-ui-drawer';
-import heroBackgroundUrl from '../assets/background.jpg';
+import {
+  SharedUiHero,
+  DrawerStateProvider,
+  SharedUiLinearLayout,
+} from '@ipts/core/ui';
 
+import heroBackgroundUrl from '../assets/background.jpg';
 import Header from './rail-ui-header';
 import Drawer from './rail-ui-navigation-drawer';
 import Footer from './rail-ui-footer';
+import background from '../assets/rail-background.svg';
 
 export interface RailUiLayoutProps {
   drawerOpen?: boolean;
@@ -32,7 +36,11 @@ export const RailUiLayout = ({
         </Header>
         <Drawer title={pageTitle} />
       </DrawerStateProvider>
-      {children}
+      <main>
+        <SharedUiLinearLayout backgroundUrl={background}>
+          {children}
+        </SharedUiLinearLayout>
+      </main>
       <Footer />
     </>
   );

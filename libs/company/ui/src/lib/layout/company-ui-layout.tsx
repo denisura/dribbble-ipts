@@ -1,11 +1,14 @@
-import { SharedUiHero } from '@ipts/shared-ui-hero';
-import { DrawerStateProvider } from '@ipts/shared-ui-drawer';
+import {
+  SharedUiHero,
+  DrawerStateProvider,
+  SharedUiLinearLayout,
+} from '@ipts/core/ui';
 
 import Header from '../header/company-ui-header';
 import Footer from '../footer/company-ui-footer';
 import Drawer from '../drawer/company-ui-navigation-drawer';
-
 import heroBackgroundUrl from '../../assets/outer-space.jpg';
+import background from '../../assets/main-background.svg';
 
 export interface CompanyUiLayoutProps {
   drawerOpen?: boolean;
@@ -33,7 +36,9 @@ export const CompanyUiLayout = ({
         </Header>
         <Drawer title={pageTitle} />
       </DrawerStateProvider>
-      <main>{children}</main>
+      <SharedUiLinearLayout backgroundUrl={background}>
+        <main>{children}</main>
+      </SharedUiLinearLayout>
       <Footer />
     </>
   );

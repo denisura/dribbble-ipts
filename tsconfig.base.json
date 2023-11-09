@@ -22,6 +22,15 @@
         "libs/company/data/news-provider/src/index.ts"
       ],
       "@ipts/company-ui": ["libs/company/ui/src/index.ts"],
+      "@ipts/core/ui": ["libs/core/ui/src/index.ts"],
+      "@ipts/core-data-bulletin-provider": [
+        "libs/core/data/bulletin-provider/src/index.ts"
+      ],
+      "@ipts/core-data-navigation-provider": [
+        "libs/core/data/navigation-provider/src/index.ts"
+      ],
+      "@ipts/core-hooks": ["libs/core/hooks/src/index.ts"],
+      "@ipts/core-router": ["libs/core/router/src/index.ts"],
       "@ipts/rail-data-alert-provider": [
         "libs/rail/data/alert-provider/src/index.ts"
       ],
@@ -29,54 +38,7 @@
         "libs/rail/data/navigation-provider/src/index.ts"
       ],
       "@ipts/rail-ui": ["libs/rail/ui/src/index.ts"],
-      "@ipts/shared-data-bulletin-provider": [
-        "libs/shared/data/bulletin-provider/src/index.ts"
-      ],
-      "@ipts/shared-data-navigation-provider": [
-        "libs/shared/data/navigation-provider/src/index.ts"
-      ],
-      "@ipts/shared-hooks": ["libs/shared/hooks/src/index.ts"],
-      "@ipts/shared-router": ["libs/shared/router/src/index.ts"],
-      "@ipts/shared-ui-action-card": [
-        "libs/shared/ui/action-card/src/index.ts"
-      ],
-      "@ipts/shared-ui-background-container": [
-        "libs/shared/ui/background-container/src/index.ts"
-      ],
-      "@ipts/shared-ui-bulletin-section": [
-        "libs/shared/ui/bulletin-section/src/index.ts"
-      ],
-      "@ipts/shared-ui-caption-card": [
-        "libs/shared/ui/caption-card/src/index.ts"
-      ],
-      "@ipts/shared-ui-drawer": ["libs/shared/ui/drawer/src/index.ts"],
-      "@ipts/shared-ui-header": ["libs/shared/ui/header/src/index.ts"],
-      "@ipts/shared-ui-hero": ["libs/shared/ui/hero/src/index.ts"],
-      "@ipts/shared-ui-icons": ["libs/shared/ui/icons/src/index.ts"],
-      "@ipts/shared-ui-linear-layout": [
-        "libs/shared/ui/linear-layout/src/index.ts"
-      ],
-      "@ipts/shared-ui-logo": ["libs/shared/ui/logo/src/index.ts"],
-      "@ipts/shared-ui-navigation-list": [
-        "libs/shared/ui/navigation/list/src/index.ts"
-      ],
-      "@ipts/shared-ui-navigation-stack": [
-        "libs/shared/ui/navigation/stack/src/index.ts"
-      ],
-      "@ipts/shared-ui-search-header": [
-        "libs/shared/ui/search-header/src/index.ts"
-      ],
-      "@ipts/shared-ui-subscription-form": [
-        "libs/shared/ui/subscription-form/src/index.ts"
-      ],
-      "@ipts/shared-ui-swiper-container": [
-        "libs/shared/ui/swiper-container/src/index.ts"
-      ],
-      "@ipts/shared-ui-theme": ["libs/shared/ui/theme/src/index.ts"],
-      "@ipts/shared-ui-theme-provider": [
-        "libs/shared/ui/theme-provider/src/index.ts"
-      ],
-      "@ipts/shared/ui/container": ["libs/shared/ui/container/src/index.ts"],
+      
       "@ipts/storybook": ["apps/storybook/src/index.ts"],
       "@ipts/travel-data-navigation-provider": [
         "libs/travel/data/navigation-provider/src/index.ts"

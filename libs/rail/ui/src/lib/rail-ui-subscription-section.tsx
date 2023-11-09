@@ -1,5 +1,4 @@
-import { NeutralContainer } from '@ipts/shared/ui/container';
-import { SharedUiSubscriptionForm } from '@ipts/shared-ui-subscription-form';
+import { NeutralContainer, SharedUiSubscriptionForm } from '@ipts/core/ui';
 
 export const RailUiSubscriptionSection = () => {
   return (

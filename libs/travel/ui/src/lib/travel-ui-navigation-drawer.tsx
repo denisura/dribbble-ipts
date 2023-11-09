@@ -1,8 +1,11 @@
-import { useNavigationContext } from '@ipts/shared-data-navigation-provider';
-import { SharedUiDrawer, DrawerHeader } from '@ipts/shared-ui-drawer';
-import { SharedUiNavigationList } from '@ipts/shared-ui-navigation-list';
+import { useNavigationContext } from '@ipts/core-data-navigation-provider';
+import {
+  SharedUiDrawer,
+  SharedUiNavigationList,
+  DrawerHeader,
+} from '@ipts/core/ui';
 
-import { TravelUiFooter } from './travel-ui-footer';
+import Footer from './travel-ui-footer';
 
 export interface TravelUiNavigationDrawerProps {
   title: React.ReactElement | string | React.ReactNode;
@@ -25,7 +28,7 @@ export const TravelUiNavigationDrawer = ({
             onClick={toggle}
             sx={{ flexGrow: 1 }}
           />
-          <TravelUiFooter onClick={toggle} />
+          <Footer onClick={toggle} />
         </>
       )}
     </SharedUiDrawer>

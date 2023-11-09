@@ -1,13 +1,15 @@
-import { SharedUiHero } from '@ipts/shared-ui-hero';
-import { DrawerStateProvider } from '@ipts/shared-ui-drawer';
-import { SharedUiLinearLayout } from '@ipts/shared-ui-linear-layout';
+import {
+  DrawerStateProvider,
+  SharedUiHero,
+  SharedUiLinearLayout,
+} from '@ipts/core/ui';
+
+import heroBackgroundUrl from '../assets/background.jpg';
+import background from '../assets/main-background-3.svg';
 
 import Header from './travel-ui-header';
 import Drawer from './travel-ui-navigation-drawer';
 import Footer from './travel-ui-footer';
-
-import heroBackgroundUrl from '../assets/background.jpg';
-import background from '../assets/main-background-3.svg';
 
 export interface TravelUiLayoutProps {
   drawerOpen?: boolean;
@@ -35,9 +37,11 @@ export const TravelUiLayout = ({
         </Header>
         <Drawer title={pageTitle} />
       </DrawerStateProvider>
-      <SharedUiLinearLayout backgroundUrl={background}>
-        {children}
-      </SharedUiLinearLayout>
+      <main>
+        <SharedUiLinearLayout backgroundUrl={background}>
+          {children}
+        </SharedUiLinearLayout>
+      </main>
       <Footer />
     </>
   );

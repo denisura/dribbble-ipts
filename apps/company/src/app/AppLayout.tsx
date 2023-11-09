@@ -1,7 +1,7 @@
-import { Outlet } from '@ipts/shared-router';
-import { LogoVIcon, LogoHO } from '@ipts/shared-ui-logo';
+import { Outlet } from '@ipts/core-router';
 import { CompanyDataNavigationProvider } from '@ipts/company-data-navigation-provider';
 import { CompanyUiLayout } from '@ipts/company-ui';
+import { LogoVIcon, LogoHO } from '@ipts/core/ui';
 
 export const AppLayout = () => {
   return (
