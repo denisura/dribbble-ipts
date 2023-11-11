@@ -22,7 +22,6 @@
         "libs/company/data/news-provider/src/index.ts"
       ],
       "@ipts/company-ui": ["libs/company/ui/src/index.ts"],
-      "@ipts/core/ui": ["libs/core/ui/src/index.ts"],
       "@ipts/core-data-bulletin-provider": [
         "libs/core/data/bulletin-provider/src/index.ts"
       ],
@@ -31,6 +30,7 @@
       ],
       "@ipts/core-hooks": ["libs/core/hooks/src/index.ts"],
       "@ipts/core-router": ["libs/core/router/src/index.ts"],
+      "@ipts/core/ui": ["libs/core/ui/src/index.ts"],
       "@ipts/rail-data-alert-provider": [
         "libs/rail/data/alert-provider/src/index.ts"
       ],
@@ -38,7 +38,6 @@
         "libs/rail/data/navigation-provider/src/index.ts"
       ],
       "@ipts/rail-ui": ["libs/rail/ui/src/index.ts"],
-      
       "@ipts/storybook": ["apps/storybook/src/index.ts"],
       "@ipts/travel-data-navigation-provider": [
         "libs/travel/data/navigation-provider/src/index.ts"

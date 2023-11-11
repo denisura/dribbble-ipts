@@ -1,7 +1,4 @@
 import { createSvgIcon } from '@mui/material/utils';
-import logoHorizontal from '../assets/logo-horizontal.svg';
-import Box from '@mui/material/Box';
-
 export const LogoVIcon = createSvgIcon(
   <svg viewBox="0 0 635 457" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M61 455.692H97.0235V337.308H61V455.692Z" fill="currentColor" />
