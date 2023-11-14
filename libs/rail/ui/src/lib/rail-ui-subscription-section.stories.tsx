@@ -31,7 +31,7 @@ const meta: Meta<typeof RailUiSubscriptionSection> = {
 export default meta;
 type Story = StoryObj<typeof RailUiSubscriptionSection>;
 
-export const NewsSubscription: Story = {
+export const AlertsSubscription: Story = {
   args: {},
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

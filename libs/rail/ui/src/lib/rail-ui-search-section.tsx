@@ -12,7 +12,7 @@ export const RailUiSearchSection = () => {
       }}
     >
       <SharedUiSearchHeader
-        title="Flights schedule"
+        title="Routes schedule"
         from={{ label: 'EAT', description: 'Florida' }}
         to={{ label: 'TO', description: 'Any Destination' }}
       />

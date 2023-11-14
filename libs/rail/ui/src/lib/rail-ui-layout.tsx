@@ -23,10 +23,11 @@ export const RailUiLayout = ({
   heroSubTitle = '',
   children,
   pageTitle,
+  drawerOpen = false,
 }: RailUiLayoutProps) => {
   return (
     <>
-      <DrawerStateProvider>
+      <DrawerStateProvider open={drawerOpen}>
         <Header title={pageTitle}>
           <SharedUiHero
             backgroundUrl={heroBackgroundUrl}
