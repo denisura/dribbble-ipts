@@ -12,20 +12,16 @@ const meta: Meta<typeof CompanyUiNewsSubscriptionSection> = {
   decorators: [
     (Story) => (
       <CompanyUiThemeProvider>
-        <Container
-          maxWidth="xs"
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-          }}
-        >
-          <Story />
-        </Container>
+        <Story />
       </CompanyUiThemeProvider>
     ),
   ],
+  parameters: {
+    layout: 'fullscreen',
+    viewport: {
+      defaultViewport: 'mobile2',
+    },
+  },
 };
 
 export default meta;
