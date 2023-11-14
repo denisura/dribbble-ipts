@@ -410,6 +410,7 @@ yarn nx g @nx/react:stories --project shared-ui-subscription-form
 
 yarn nx g @nx/react:stories --project core-ui
 yarn nx g @nx/react:stories --project rail-ui
+yarn nx g @nx/react:stories --project travel-ui
 
 ```
 

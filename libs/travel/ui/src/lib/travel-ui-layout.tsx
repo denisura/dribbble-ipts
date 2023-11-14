@@ -24,10 +24,11 @@ export const TravelUiLayout = ({
   heroSubTitle = '',
   children,
   pageTitle,
+  drawerOpen = false,
 }: TravelUiLayoutProps) => {
   return (
     <>
-      <DrawerStateProvider>
+      <DrawerStateProvider open={drawerOpen}>
         <Header title={pageTitle}>
           <SharedUiHero
             backgroundUrl={heroBackgroundUrl}

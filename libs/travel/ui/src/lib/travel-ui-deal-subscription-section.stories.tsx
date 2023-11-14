@@ -31,7 +31,7 @@ const meta: Meta<typeof TravelUiDealSubscriptionSection> = {
 export default meta;
 type Story = StoryObj<typeof TravelUiDealSubscriptionSection>;
 
-export const NewsSubscription: Story = {
+export const PromoSubscription: Story = {
   args: {},
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
