@@ -1,9 +1,8 @@
-
-export { Facebook, Instagram, Twitter, YouTube } from '@mui/icons-material';
 export { createTheme, useTheme } from '@mui/material/styles';
-
+export { Facebook, Instagram, Twitter, YouTube } from '@mui/icons-material';
 export * from './lib/drawer-header/drawer-header';
 export * from './lib/neutral-container';
+export * from './lib/placeholder/placeholder';
 export * from './lib/primary-container';
 export * from './lib/shared-ui-action-card';
 export * from './lib/shared-ui-background-container';
@@ -21,4 +20,3 @@ export * from './lib/shared-ui-subscription-form';
 export * from './lib/shared-ui-swiper-container';
 export * from './lib/shared-ui-theme-provider';
 export * from './lib/shared-ui-theme';
-

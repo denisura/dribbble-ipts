@@ -2,7 +2,7 @@ import List, { ListProps } from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import { NavigationItem } from '@ipts/shared-data-navigation-provider';
+import { NavigationItem } from '@ipts/core-data-navigation-provider';
 
 export interface SharedUiNavigationListProps extends ListProps {
   navItems: NavigationItem[];

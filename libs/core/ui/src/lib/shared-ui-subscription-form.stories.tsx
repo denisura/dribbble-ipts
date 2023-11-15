@@ -9,23 +9,19 @@ import { createTheme } from '@mui/material';
 
 const meta: Meta<typeof SharedUiSubscriptionForm> = {
   component: SharedUiSubscriptionForm,
-  title: 'Shared/Forms',
+  title: 'Design System/Forms',
   decorators: [
     (Story) => (
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: '100vh',
-        }}
-      >
-        <SharedUiThemeProvider theme={createTheme(defaultTheme)}>
-          <Story />
-        </SharedUiThemeProvider>
-      </div>
+      <SharedUiThemeProvider theme={createTheme(defaultTheme)}>
+        <Story />
+      </SharedUiThemeProvider>
     ),
   ],
+  parameters: {
+    viewport: {
+      defaultViewport: 'mobile2',
+    },
+  },
 };
 
 export default meta;
