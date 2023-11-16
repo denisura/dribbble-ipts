@@ -1,7 +1,7 @@
 import type { Meta } from '@storybook/react';
 import { CompanyUiLayout } from './company-ui-layout';
 
-import { CompanyUiThemeProvider } from '../theme/company-ui-theme-provider';
+import { CompanyUiThemeProvider } from './company-ui-theme-provider';
 import { CompanyDataNavigationProvider } from '@ipts/company-data-navigation-provider';
 import { DrawerStateProvider, LogoHO, LogoVIcon } from '@ipts/core/ui';
 import Box from '@mui/material/Box/Box';

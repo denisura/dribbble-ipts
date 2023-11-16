@@ -1,7 +1,7 @@
 import type { Meta } from '@storybook/react';
 import { CompanyUiNewsSection } from './company-ui-news-section';
 
-import { CompanyUiThemeProvider } from '../theme/company-ui-theme-provider';
+import { CompanyUiThemeProvider } from './company-ui-theme-provider';
 import { CompanyDataNewsProvider } from '@ipts/company-data-news-provider';
 
 const meta: Meta<typeof CompanyUiNewsSection> = {

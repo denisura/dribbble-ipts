@@ -5,7 +5,7 @@ import {
   SharedUiNavigationList,
 } from '@ipts/core/ui';
 
-import Footer from '../footer/company-ui-footer';
+import Footer from './company-ui-footer';
 
 export interface CompanyUiNavigationDrawerProps {
   title: React.ReactElement | string | React.ReactNode;

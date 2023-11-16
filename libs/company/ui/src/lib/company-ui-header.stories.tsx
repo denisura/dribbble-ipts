@@ -1,19 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { CompanyUiFooter } from './company-ui-footer';
-import { CompanyUiThemeProvider } from '../theme/company-ui-theme-provider';
+import { CompanyUiHeader } from './company-ui-header';
+import { CompanyUiThemeProvider } from './company-ui-theme-provider';
 import { CompanyDataNavigationProvider } from '@ipts/company-data-navigation-provider';
+import { DrawerStateProvider } from '@ipts/core/ui';
 
-import { within } from '@storybook/testing-library';
-import { expect } from '@storybook/jest';
-
-const meta: Meta<typeof CompanyUiFooter> = {
-  component: CompanyUiFooter,
+const meta: Meta<typeof CompanyUiHeader> = {
+  component: CompanyUiHeader,
   title: 'Sites/Company/Navigation',
   decorators: [
     (Story) => (
       <CompanyUiThemeProvider>
         <CompanyDataNavigationProvider>
-          <Story />
+          <DrawerStateProvider>
+            <Story />
+          </DrawerStateProvider>
         </CompanyDataNavigationProvider>
       </CompanyUiThemeProvider>
     ),
@@ -28,6 +28,6 @@ const meta: Meta<typeof CompanyUiFooter> = {
 
 export default meta;
 
-export const Footer = {
-  args: {},
+export const Header = {
+  args: { title: 'My Title' },
 };

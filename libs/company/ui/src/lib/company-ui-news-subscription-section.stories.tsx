@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { CompanyUiNewsSubscriptionSection } from './company-ui-news-subscription-section';
-import { CompanyUiThemeProvider } from '../theme/company-ui-theme-provider';
-import { Container } from '@mui/material';
+import { CompanyUiThemeProvider } from './company-ui-theme-provider';
 
 import { within } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';

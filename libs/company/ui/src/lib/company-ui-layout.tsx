@@ -4,11 +4,11 @@ import {
   SharedUiLinearLayout,
 } from '@ipts/core/ui';
 
-import Header from '../header/company-ui-header';
-import Footer from '../footer/company-ui-footer';
-import Drawer from '../drawer/company-ui-navigation-drawer';
-import heroBackgroundUrl from '../../assets/outer-space.jpg';
-import background from '../../assets/main-background.svg';
+import Header from './company-ui-header';
+import Footer from './company-ui-footer';
+import Drawer from './company-ui-navigation-drawer';
+import heroBackgroundUrl from '../assets/outer-space.jpg';
+import background from '../assets/main-background.svg';
 
 export interface CompanyUiLayoutProps {
   drawerOpen?: boolean;

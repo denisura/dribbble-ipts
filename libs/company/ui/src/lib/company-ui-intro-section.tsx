@@ -4,10 +4,10 @@ import {
   SharedUiSwiperContainer,
 } from '@ipts/core/ui';
 
-import space from '../../assets/space.jpg';
-import open from '../../assets/open-space.jpg';
-import planets from '../../assets/planets-art.jpg';
-import travel from '../../assets/travel.webp';
+import space from '../assets/space.jpg';
+import open from '../assets/open-space.jpg';
+import planets from '../assets/planets-art.jpg';
+import travel from '../assets/travel.webp';
 
 const points = [
   {

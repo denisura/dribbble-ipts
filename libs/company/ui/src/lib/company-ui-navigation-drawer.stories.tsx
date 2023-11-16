@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { CompanyUiNavigationDrawer } from './company-ui-navigation-drawer';
 
-import { CompanyUiThemeProvider } from '../theme/company-ui-theme-provider';
+import { CompanyUiThemeProvider } from './company-ui-theme-provider';
 import { CompanyDataNavigationProvider } from '@ipts/company-data-navigation-provider';
 import { DrawerStateProvider } from '@ipts/core/ui';
 
