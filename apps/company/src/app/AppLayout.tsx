@@ -1,15 +1,15 @@
 import { Outlet } from '@ipts/core-router';
 import { CompanyDataNavigationProvider } from '@ipts/company-data-navigation-provider';
 import { CompanyUiLayout } from '@ipts/company-ui';
-import { LogoVIcon, LogoHO } from '@ipts/core/ui';
+import { LogoWorld } from '@ipts/core/ui';
 
 export const AppLayout = () => {
   return (
     <CompanyDataNavigationProvider>
       <CompanyUiLayout
-        heroTitle={<LogoVIcon sx={{ fontSize: 180 }} />}
+        heroTitle={<LogoWorld />}
         heroSubTitle="Space travel at ease"
-        pageTitle={<LogoHO />}
+        pageTitle={<LogoWorld />}
       >
         <Outlet />
       </CompanyUiLayout>

@@ -3,7 +3,7 @@ import { CompanyUiLayout } from './company-ui-layout';
 
 import { CompanyUiThemeProvider } from './company-ui-theme-provider';
 import { CompanyDataNavigationProvider } from '@ipts/company-data-navigation-provider';
-import { DrawerStateProvider, LogoHO, LogoVIcon } from '@ipts/core/ui';
+import { DrawerStateProvider, LogoWorld } from '@ipts/core/ui';
 import Box from '@mui/material/Box/Box';
 
 const meta: Meta<typeof CompanyUiLayout> = {
@@ -15,9 +15,9 @@ const meta: Meta<typeof CompanyUiLayout> = {
         <CompanyDataNavigationProvider>
           <DrawerStateProvider>
             <Story
-              heroTitle={<LogoVIcon sx={{ fontSize: 180 }} />}
+              heroTitle={<LogoWorld />}
               heroSubTitle="Space travel at ease"
-              pageTitle={<LogoHO />}
+              pageTitle={<LogoWorld />}
             />
           </DrawerStateProvider>
         </CompanyDataNavigationProvider>

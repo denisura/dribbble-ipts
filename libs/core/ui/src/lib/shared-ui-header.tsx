@@ -68,13 +68,9 @@ export const SharedUiHeader = ({
           <Container maxWidth="md">
             <Toolbar disableGutters>
               <Fade in={!isScrolledToTop}>
-                <Typography
-                  variant="h6"
-                  component="div"
-                  sx={{ flexGrow: 1, display: 'block' }}
-                >
+                <Box sx={{ flexGrow: 1, height: '24px', textAlign: 'start' }}>
                   {title}
-                </Typography>
+                </Box>
               </Fade>
 
               <Box sx={{ display: { xs: 'none', sm: 'block' } }}>

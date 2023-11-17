@@ -6,7 +6,7 @@ import { Box } from '@mui/material';
 export const DrawerHeader = ({ children }: PropsWithChildren) => {
   return (
     <Box sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ my: 2, px: 6 }}>
         {children}
       </Typography>
       <Divider />

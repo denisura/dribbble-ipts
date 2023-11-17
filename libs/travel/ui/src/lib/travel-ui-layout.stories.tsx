@@ -3,7 +3,7 @@ import { TravelUiLayout } from './travel-ui-layout';
 
 import { TravelUiThemeProvider } from '@ipts/travel-ui';
 import { TravelDataNavigationProvider } from '@ipts/travel-data-navigation-provider';
-import { DrawerStateProvider, LogoHO, LogoVIcon } from '@ipts/core/ui';
+import { DrawerStateProvider, LogoVisit, LogoWorld } from '@ipts/core/ui';
 
 import Box from '@mui/material/Box/Box';
 
@@ -16,9 +16,9 @@ const meta: Meta<typeof TravelUiLayout> = {
         <TravelDataNavigationProvider>
           <DrawerStateProvider>
             <Story
-              heroTitle={<LogoVIcon sx={{ fontSize: 180 }} />}
+              heroTitle={<LogoVisit />}
               heroSubTitle="Space travel at ease"
-              pageTitle={<LogoHO />}
+              pageTitle={<LogoWorld />}
             />
           </DrawerStateProvider>
         </TravelDataNavigationProvider>

@@ -3,7 +3,7 @@ import { RailUiLayout } from './rail-ui-layout';
 
 import { RailUiThemeProvider } from './rail-ui-theme-provider';
 import { RailDataNavigationProvider } from '@ipts/rail-data-navigation-provider';
-import { DrawerStateProvider, LogoHO, LogoVIcon } from '@ipts/core/ui';
+import { DrawerStateProvider, LogoWorld, LogoRide } from '@ipts/core/ui';
 import Box from '@mui/material/Box/Box';
 
 const meta: Meta<typeof RailUiLayout> = {
@@ -15,9 +15,9 @@ const meta: Meta<typeof RailUiLayout> = {
         <RailDataNavigationProvider>
           <DrawerStateProvider>
             <Story
-              heroTitle={<LogoVIcon sx={{ fontSize: 180 }} />}
+              heroTitle={<LogoRide />}
               heroSubTitle="Space travel at ease"
-              pageTitle={<LogoHO />}
+              pageTitle={<LogoWorld />}
             />
           </DrawerStateProvider>
         </RailDataNavigationProvider>

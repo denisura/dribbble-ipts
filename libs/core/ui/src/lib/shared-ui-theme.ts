@@ -23,14 +23,14 @@ export const defaultTheme: ThemeOptions = {
       main: '#412859',
     },
     background: {
-      custom: '#ab23cd'
+      custom: '#AEFFF7'
     },    
     neutral: {
-      main: '#EEEEEE',
+      main: '#AEFFF7',
       contrastText: '#000',
     },
     secondary: {
-      main: '#A65F37',
+      main: '#8A46AC',
     },
   },
 }

@@ -40,6 +40,7 @@ export const SharedUiHero = ({
                 component="div"
                 sx={{
                   fontWeight: 700,
+                  mb: 4,
                 }}
               >
                 {title}

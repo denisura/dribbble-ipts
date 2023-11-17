@@ -15,7 +15,13 @@ export const SharedUiSubscriptionForm = ({
   ctaLabel,
 }: SharedUiSubscriptionFormProps) => {
   return (
-    <Box display="flex" flexDirection="column" alignItems="start" margin="auto">
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="start"
+      margin="auto"
+      sx={{ p: 4, background: '#fff' }}
+    >
       <Typography variant="h5" gutterBottom>
         {title}
       </Typography>

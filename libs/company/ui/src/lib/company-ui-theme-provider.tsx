@@ -1,17 +1,19 @@
+import { PropsWithChildren } from 'react';
 import {
   SharedUiThemeProvider,
   defaultTheme,
   createTheme,
 } from '@ipts/core/ui';
 
-export interface CompanyUiThemeProviderProps {
-  children?: React.ReactNode;
-}
-const sharedTheme = createTheme(defaultTheme);
+const sharedTheme = createTheme(defaultTheme, {
+  palette: {
+    primary: {
+      main: '#011542',
+    },
+  },
+});
 
-export const CompanyUiThemeProvider = ({
-  children,
-}: CompanyUiThemeProviderProps) => (
+export const CompanyUiThemeProvider = ({ children }: PropsWithChildren) => (
   <SharedUiThemeProvider theme={sharedTheme}>{children}</SharedUiThemeProvider>
 );
 

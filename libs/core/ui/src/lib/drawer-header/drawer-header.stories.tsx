@@ -5,7 +5,7 @@ import {
   defaultTheme,
   SharedUiThemeProvider,
   createTheme,
-  LogoHO,
+  LogoWorld,
   Placeholder,
 } from '@ipts/core/ui';
 
@@ -27,7 +27,7 @@ const meta: Meta<typeof DrawerHeader> = {
       control: { type: 'select' },
       mapping: {
         placeholder: <Placeholder />,
-        logo: <LogoHO />,
+        logo: <LogoWorld />,
       },
     },
   },
