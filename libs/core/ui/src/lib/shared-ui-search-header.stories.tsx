@@ -7,9 +7,6 @@ import {
 } from '@ipts/core/ui';
 
 import { createTheme } from '@mui/material';
-
-import background from '../assets/story_background.jpg';
-
 const meta: Meta<typeof SharedUiSearchHeader> = {
   component: SharedUiSearchHeader,
   title: 'Design System/Search',

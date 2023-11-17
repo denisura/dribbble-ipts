@@ -2,7 +2,9 @@
   "name": "@ipts/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build-storybook":  "yarn nx run  storybook:build-storybook"
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -53,6 +55,7 @@
     "@vitest/coverage-c8": "~0.32.0",
     "@vitest/ui": "~0.32.0",
     "babel-jest": "^29.4.1",
+    "chromatic": "^9.0.0",
     "cypress": "^13.0.0",
     "eslint": "~8.46.0",
     "eslint-config-prettier": "8.1.0",

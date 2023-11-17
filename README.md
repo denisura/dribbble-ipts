@@ -412,6 +412,8 @@ yarn nx g @nx/react:stories --project core-ui
 yarn nx g @nx/react:stories --project rail-ui
 yarn nx g @nx/react:stories --project travel-ui
 
+yarn nx g @nx/react:stories --project core/ui
+
 ```
 
 ## Generate code
@@ -537,3 +539,9 @@ yarn nx g @nx/workspace:remove --projectName your-project-full-name
 // //appbar
 // //menu list
 // //list item
+
+Clear NX cache
+
+```
+yarn nx reset
+```

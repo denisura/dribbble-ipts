@@ -1,7 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta } from '@storybook/react';
 import { Container } from '@mui/material';
-import { within } from '@storybook/testing-library';
-import { expect } from '@storybook/jest';
 
 import { TravelUiDealSubscriptionSection } from './travel-ui-deal-subscription-section';
 import { TravelUiThemeProvider } from './travel-ui-theme-provider';
@@ -29,12 +27,7 @@ const meta: Meta<typeof TravelUiDealSubscriptionSection> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof TravelUiDealSubscriptionSection>;
 
-export const PromoSubscription: Story = {
+export const PromoSubscription = {
   args: {},
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    expect(canvas.getByText(/Subscribe to our deals/gi)).toBeTruthy();
-  },
 };

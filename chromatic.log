@@ -1,0 +1,128 @@
+
+Chromatic CLI v9.0.0
+https://www.chromatic.com/docs/cli
+
+Authenticating with Chromatic
+    → Connecting to https://index.chromatic.com
+Authenticated with Chromatic
+    → Using project token '****************c330'
+Retrieving git information
+Retrieved git information
+    → Commit '670004c' on branch 'main'; no ancestor found
+Collecting Storybook metadata
+Collected Storybook metadata
+    → Storybook 7.4.6 for React; using the unknown builder (0); supported addons found: Unknown
+Initializing build
+Initialized build
+    → Build 5 initialized
+Building your Storybook
+    → Running command: yarn run build-storybook --output-dir /var/folders/p7/jf6vqy6x01g8r672ptc1y8600000gn/T/chromatic--72817-BC5jLA4bokZL
+Storybook built in 4 minutes 18 seconds
+    → View build log at /Users/denisura/workspace/github.com/denisura/dribbble-ipts/build-storybook.log
+Publish your built Storybook
+    → Validating Storybook files
+Publishing your built Storybook
+    → Retrieving target location
+    → Starting publish
+    → [                    ] 0%
+    → [                    ] 2%
+    → [=                   ] 4%
+    → [=                   ] 5%
+    → [=                   ] 6%
+    → [==                  ] 8%
+    → [==                  ] 11%
+    → [===                 ] 13%
+    → [===                 ] 14%
+    → [===                 ] 15%
+    → [====                ] 18%
+    → [====                ] 20%
+    → [====                ] 22%
+    → [=====               ] 24%
+    → [=====               ] 25%
+    → [=====               ] 26%
+    → [======              ] 28%
+    → [======              ] 29%
+    → [======              ] 30%
+    → [======              ] 32%
+    → [=======             ] 33%
+    → [=======             ] 34%
+    → [=======             ] 36%
+    → [=======             ] 37%
+    → [========            ] 38%
+    → [========            ] 39%
+    → [========            ] 41%
+    → [========            ] 42%
+    → [=========           ] 43%
+    → [=========           ] 45%
+    → [=========           ] 46%
+    → [=========           ] 47%
+    → [==========          ] 48%
+    → [==========          ] 49%
+    → [==========          ] 50%
+    → [==========          ] 51%
+    → [==========          ] 52%
+    → [===========         ] 53%
+    → [===========         ] 54%
+    → [===========         ] 55%
+    → [===========         ] 56%
+    → [===========         ] 57%
+    → [============        ] 58%
+    → [============        ] 59%
+    → [============        ] 62%
+    → [=============       ] 64%
+    → [=============       ] 65%
+    → [=============       ] 67%
+    → [==============      ] 68%
+    → [==============      ] 69%
+    → [==============      ] 70%
+    → [==============      ] 71%
+    → [==============      ] 72%
+    → [===============     ] 73%
+    → [===============     ] 74%
+    → [===============     ] 75%
+    → [===============     ] 76%
+    → [===============     ] 77%
+    → [================    ] 78%
+    → [================    ] 79%
+    → [================    ] 80%
+    → [================    ] 81%
+    → [================    ] 82%
+    → [=================   ] 83%
+    → [=================   ] 84%
+    → [=================   ] 85%
+    → [=================   ] 86%
+    → [==================  ] 89%
+    → [==================  ] 91%
+    → [=================== ] 93%
+    → [=================== ] 94%
+    → [=================== ] 96%
+    → [=================== ] 97%
+    → [====================] 98%
+    → [====================] 99%
+    → [====================] 100%
+Publish complete in 22 seconds
+    → View your Storybook at https://655695242ffd172364797427-ylpawgbdgu.chromatic.com
+Verifying your Storybook
+    → This may take a few minutes
+Started build 5
+    → Continue setup at https://www.chromatic.com/setup?appId=655695242ffd172364797427
+Running 44 tests
+    → This may take a few minutes
+    → [                    ] 1/44  Navigation › Footer 
+    → [===                 ] 7/44  Sections › News Section 
+    → [=====               ] 10/44  Containers › Neutral 
+    → [========            ] 17/44  Cards › Caption 
+    → [=========           ] 19/44  Header › Default 
+    → [==========          ] 23/44  List › Dense 
+    → [=============       ] 28/44  Containers › Swiper 
+    → [===============     ] 32/44  Layout › Main 
+    → [================    ] 35/44  Sections › Routes Search 
+    → [=================== ] 41/44  Layout › Main With Open Drawer 
+    → [=================== ] 42/44  Navigation › Drawer 
+✔ Build passed. Welcome to Chromatic!
+We found 20 components with 44 stories and took 44 snapshots.
+ℹ Please continue setup at https://www.chromatic.com/setup?appId=655695242ffd172364797427
+Build 5 auto-accepted
+    → Tested 44 stories across 20 components; captured 44 snapshots in 18 seconds
+
+
