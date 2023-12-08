@@ -9,7 +9,7 @@ import Box from '@mui/material/Box/Box';
 
 const meta: Meta<typeof TravelUiLayout> = {
   component: TravelUiLayout,
-  title: 'Sites/Travel/Layout',
+  title: 'Travel/Layout',
   decorators: [
     (Story) => (
       <TravelUiThemeProvider>

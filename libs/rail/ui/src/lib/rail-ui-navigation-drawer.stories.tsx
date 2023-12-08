@@ -7,7 +7,7 @@ import { RailUiThemeProvider } from './rail-ui-theme-provider';
 
 const meta: Meta<typeof RailUiNavigationDrawer> = {
   component: RailUiNavigationDrawer,
-  title: 'Sites/Rail/Navigation',
+  title: 'Rail/Navigation',
   decorators: [
     (Story) => (
       <RailUiThemeProvider>

@@ -4,7 +4,7 @@ import { TravelUiThemeProvider, TravelUiSearchSection } from '@ipts/travel-ui';
 
 const meta: Meta<typeof TravelUiSearchSection> = {
   component: TravelUiSearchSection,
-  title: 'Sites/Travel/Sections',
+  title: 'Travel/Sections',
   decorators: [
     (Story) => (
       <TravelUiThemeProvider>

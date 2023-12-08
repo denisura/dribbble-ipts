@@ -5,7 +5,7 @@ import {
   createTheme,
 } from '@ipts/core/ui';
 
-const sharedTheme = createTheme(defaultTheme, {
+export const theme = createTheme(defaultTheme, {
   palette: {
     primary: {
       main: '#006130',
@@ -14,7 +14,7 @@ const sharedTheme = createTheme(defaultTheme, {
 });
 
 export const TravelUiThemeProvider = ({ children }: PropsWithChildren) => (
-  <SharedUiThemeProvider theme={sharedTheme}>{children}</SharedUiThemeProvider>
+  <SharedUiThemeProvider theme={theme}>{children}</SharedUiThemeProvider>
 );
 
 export default TravelUiThemeProvider;

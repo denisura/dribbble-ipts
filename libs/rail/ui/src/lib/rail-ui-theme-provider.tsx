@@ -6,7 +6,7 @@ import {
   createTheme,
 } from '@ipts/core/ui';
 
-const sharedTheme = createTheme(defaultTheme, {
+export const theme = createTheme(defaultTheme, {
   palette: {
     primary: {
       main: '#5C0007',
@@ -15,7 +15,7 @@ const sharedTheme = createTheme(defaultTheme, {
 });
 
 export const RailUiThemeProvider = ({ children }: PropsWithChildren) => (
-  <SharedUiThemeProvider theme={sharedTheme}>{children}</SharedUiThemeProvider>
+  <SharedUiThemeProvider theme={theme}>{children}</SharedUiThemeProvider>
 );
 
 export default RailUiThemeProvider;

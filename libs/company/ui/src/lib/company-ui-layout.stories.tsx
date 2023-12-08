@@ -8,7 +8,7 @@ import Box from '@mui/material/Box/Box';
 
 const meta: Meta<typeof CompanyUiLayout> = {
   component: CompanyUiLayout,
-  title: 'Sites/Company/Layout',
+  title: 'Company/Layout',
   decorators: [
     (Story) => (
       <CompanyUiThemeProvider>

@@ -6,7 +6,7 @@ import { TravelDataNavigationProvider } from '@ipts/travel-data-navigation-provi
 
 const meta: Meta<typeof TravelUiFooter> = {
   component: TravelUiFooter,
-  title: 'Sites/Travel/Navigation',
+  title: 'Travel/Navigation',
   decorators: [
     (Story) => (
       <TravelUiThemeProvider>

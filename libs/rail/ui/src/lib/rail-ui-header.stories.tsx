@@ -7,7 +7,7 @@ import { DrawerStateProvider } from '@ipts/core/ui';
 
 const meta: Meta<typeof RailUiHeader> = {
   component: RailUiHeader,
-  title: 'Sites/Rail/Navigation',
+  title: 'Rail/Navigation',
   decorators: [
     (Story) => (
       <RailUiThemeProvider>

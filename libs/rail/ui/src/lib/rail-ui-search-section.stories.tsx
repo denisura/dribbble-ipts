@@ -4,7 +4,7 @@ import { RailUiThemeProvider } from './rail-ui-theme-provider';
 
 const meta: Meta<typeof RailUiSearchSection> = {
   component: RailUiSearchSection,
-  title: 'Sites/Rail/Sections',
+  title: 'Rail/Sections',
   decorators: [
     (Story) => (
       <RailUiThemeProvider>

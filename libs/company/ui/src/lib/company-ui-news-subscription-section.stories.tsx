@@ -4,7 +4,7 @@ import { CompanyUiThemeProvider } from './company-ui-theme-provider';
 
 const meta: Meta<typeof CompanyUiNewsSubscriptionSection> = {
   component: CompanyUiNewsSubscriptionSection,
-  title: 'Sites/Company/Sections',
+  title: 'Company/Sections',
   decorators: [
     (Story) => (
       <CompanyUiThemeProvider>

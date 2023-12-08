@@ -1,0 +1,33 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import { theme } from '@ipts/rail-ui';
+
+<Meta title="Rail/Colors" />
+
+export const colorNames = [
+  'primary',
+  'secondary',
+  'background',
+  'common',
+  'error',
+  'neutral',
+  'grey',
+  'info',
+  'success',
+  'text',
+];
+
+# Colors
+
+<ColorPalette>
+
+    {Object.entries(theme.palette)
+    .filter(([name])=> colorNames.includes(name))
+    .map(([name, colors])=>(
+    <ColorItem
+        key={name}
+        title={name}
+        colors={colors}
+    />
+    ))}
+
+</ColorPalette>

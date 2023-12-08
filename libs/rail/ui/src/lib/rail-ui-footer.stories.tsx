@@ -6,7 +6,7 @@ import { RailDataNavigationProvider } from '@ipts/rail-data-navigation-provider'
 
 const meta: Meta<typeof RailUiFooter> = {
   component: RailUiFooter,
-  title: 'Sites/Rail/Navigation',
+  title: 'Rail/Navigation',
   decorators: [
     (Story) => (
       <RailUiThemeProvider>

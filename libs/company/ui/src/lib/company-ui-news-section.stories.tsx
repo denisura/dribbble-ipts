@@ -6,7 +6,7 @@ import { CompanyDataNewsProvider } from '@ipts/company-data-news-provider';
 
 const meta: Meta<typeof CompanyUiNewsSection> = {
   component: CompanyUiNewsSection,
-  title: 'Sites/Company/Sections',
+  title: 'Company/Sections',
   decorators: [
     (Story) => (
       <CompanyUiThemeProvider>

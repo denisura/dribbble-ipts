@@ -6,7 +6,7 @@ import { Container } from '@mui/material';
 
 const meta: Meta<typeof RailUiSubscriptionSection> = {
   component: RailUiSubscriptionSection,
-  title: 'Sites/Rail/Sections',
+  title: 'Rail/Sections',
   decorators: [
     (Story) => (
       <RailUiThemeProvider>

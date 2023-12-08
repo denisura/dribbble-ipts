@@ -6,7 +6,7 @@ import { TravelUiThemeProvider } from './travel-ui-theme-provider';
 
 const meta: Meta<typeof TravelUiDealSubscriptionSection> = {
   component: TravelUiDealSubscriptionSection,
-  title: 'Sites/Travel/Sections',
+  title: 'Travel/Sections',
   decorators: [
     (Story) => (
       <TravelUiThemeProvider>

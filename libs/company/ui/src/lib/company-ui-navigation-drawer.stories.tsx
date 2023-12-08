@@ -7,7 +7,7 @@ import { DrawerStateProvider } from '@ipts/core/ui';
 
 const meta: Meta<typeof CompanyUiNavigationDrawer> = {
   component: CompanyUiNavigationDrawer,
-  title: 'Sites/Company/Navigation',
+  title: 'Company/Navigation',
   decorators: [
     (Story) => (
       <CompanyUiThemeProvider>

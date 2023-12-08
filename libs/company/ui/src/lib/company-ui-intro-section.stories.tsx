@@ -6,7 +6,7 @@ import { DrawerStateProvider } from '@ipts/core/ui';
 
 const meta: Meta<typeof CompanyUiIntroSection> = {
   component: CompanyUiIntroSection,
-  title: 'Sites/Company/Sections',
+  title: 'Company/Sections',
   decorators: [
     (Story) => (
       <CompanyUiThemeProvider>

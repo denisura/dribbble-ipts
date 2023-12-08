@@ -8,7 +8,7 @@ import Box from '@mui/material/Box/Box';
 
 const meta: Meta<typeof RailUiLayout> = {
   component: RailUiLayout,
-  title: 'Sites/Rail/Layout',
+  title: 'Rail/Layout',
   decorators: [
     (Story) => (
       <RailUiThemeProvider>

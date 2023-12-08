@@ -3,3 +3,30 @@ import { Meta } from '@storybook/blocks';
 <Meta title="Getting Started/Overview" />
 
 # Overview
+
+This design system has been crafted with developers in mind, tailored specifically for a fictional space travel company.
+[Case study](https://dribbble.com/shots/22801842-Case-Study-How-to-Build-Scalable-Design-System) offers a comprehensive exploration of the challenges encountered and the overarching philosophy that guided the creation of this design system. Dive into the intricate details and gain valuable insights into the thought process that shaped the development of this scalable design solution.
+
+This design system was developed to fulfill the following requirements:
+
+**Flexibility:**
+Integrating new components or introducing entirely new services utilizing our design system should not compromise the ease of development, ensuring minimal effort is required for implementation.
+
+**Developer-Friendly:**
+The utilization of the design system by developers should be straightforward, requiring minimal configuration and setup to streamline the development process.
+
+**Customizability:**
+While design systems aim to unify design elements, they should also offer flexibility for customization, allowing adjustments to typography, fonts, and colors tailored to specific services when necessary.
+
+## Eagle view
+
+Let's delve into the web application's architecture from top to bottom, establishing clear expectations of responsibilities for each layer in the system.
+
+**Design System Layer**
+Context and data agnostic UI components and layout. It can assemble other components from design system
+
+**Feature Block Layer**
+Connects data from data providers and assemble components from design system to present context specific feature interface
+
+**Application Layer**
+Defines all routes. For each route it should define page layout, order of feature blocks and their corresponding data providers.

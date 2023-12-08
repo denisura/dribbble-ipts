@@ -3,7 +3,7 @@ import { TravelUiThemeProvider, TravelUiPopularSection } from '@ipts/travel-ui';
 
 const meta: Meta<typeof TravelUiPopularSection> = {
   component: TravelUiPopularSection,
-  title: 'Sites/Travel/Sections',
+  title: 'Travel/Sections',
   decorators: [
     (Story) => (
       <TravelUiThemeProvider>

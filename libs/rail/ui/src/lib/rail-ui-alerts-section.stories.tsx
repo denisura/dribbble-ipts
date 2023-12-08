@@ -6,7 +6,7 @@ import { RailDataAlertProvider } from '@ipts/rail-data-alert-provider';
 
 const meta: Meta<typeof RailUiAlertsSection> = {
   component: RailUiAlertsSection,
-  title: 'Sites/Rail/Sections',
+  title: 'Rail/Sections',
   decorators: [
     (Story) => (
       <RailUiThemeProvider>

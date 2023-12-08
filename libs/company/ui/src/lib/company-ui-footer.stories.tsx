@@ -8,7 +8,7 @@ import { expect } from '@storybook/jest';
 
 const meta: Meta<typeof CompanyUiFooter> = {
   component: CompanyUiFooter,
-  title: 'Sites/Company/Navigation',
+  title: 'Company/Navigation',
   decorators: [
     (Story) => (
       <CompanyUiThemeProvider>
