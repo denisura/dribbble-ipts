@@ -1,4 +1,5 @@
 import { ThemeOptions } from '@mui/material/styles';
+import './fonts.css';
 
 declare module '@mui/material/styles' {
   
@@ -18,6 +19,27 @@ declare module '@mui/material/styles' {
 }
 
 export const defaultTheme: ThemeOptions = {  
+  typography: {
+    fontFamily: "IBM Plex Mono, sans-serif",
+    h1: {
+      fontFamily: "IBM Plex Serif, sans-serif",
+    },
+    h2: {
+      fontFamily: "IBM Plex Serif, sans-serif",
+    },
+    h3: {
+      fontFamily: "IBM Plex Serif, sans-serif",
+    },
+    h4: {
+      fontFamily: "IBM Plex Serif, sans-serif",
+    },
+    h5: {
+      fontFamily: "IBM Plex Serif, sans-serif",
+    },
+    h6: {
+      fontFamily: "IBM Plex Serif, sans-serif",
+    },
+  },
   palette: {
     primary: {
       main: '#412859',

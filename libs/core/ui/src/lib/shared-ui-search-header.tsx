@@ -57,9 +57,23 @@ export const SharedUiSearchHeader = ({
           <SwapHorizIcon fontSize="inherit" />
         </IconButton>
         <Typography variant="h2">{to.label}</Typography>
-        <Typography variant="body2">{from.description}</Typography>
+        <Typography
+          variant="body2"
+          sx={{
+            textAlign: 'center',
+          }}
+        >
+          {from.description}
+        </Typography>
         <span />
-        <Typography variant="body2">{to.description}</Typography>
+        <Typography
+          variant="body2"
+          sx={{
+            textAlign: 'center',
+          }}
+        >
+          {to.description}
+        </Typography>
       </Box>
       <ExpanderButton variant="outlined" color="inherit">
         <ExpandMoreIcon />

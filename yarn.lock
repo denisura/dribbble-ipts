@@ -1655,6 +1655,16 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.1.4.tgz#19654d1026cc410975d46445180e70a5089b3e7d"
   integrity sha512-qprfWkn82Iw821mcKofJ5Pk9wgioHicxcQMxx+5zt5GSKoqdWvgG5AxVmpmUUjzTLPVSH5auBrhI93Deayn/DA==
 
+"@fontsource/ibm-plex-mono@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-mono/-/ibm-plex-mono-5.0.8.tgz#0fa47c935e0f15333afa074d739d7965bdca5067"
+  integrity sha512-AoR7K2YtlGKy3LApyLYjqjyz0o8XtkRvbB/juMsGSGNayBBAly140ykZls+VxcXjZSLQpp2RyxKo6lYOuHPmUw==
+
+"@fontsource/ibm-plex-serif@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-serif/-/ibm-plex-serif-5.0.8.tgz#35af498bed4d9cb4fb06051fbc6498b4cfa0d465"
+  integrity sha512-KUp1E9Wzf2Umhr2SbpcF9HwgFJmuxvKAARmpl7GDDkIG30R1PMFJWxfSfQ7oX/oVBtomGq5RUTaMMUeE0ngEgw==
+
 "@hapi/hoek@^9.0.0":
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.3.0.tgz#8368869dcb735be2e7f5cb7647de78e167a251fb"
